@@ -1,0 +1,9 @@
+/* 공통요소 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.inner{
+    
+}
