@@ -1,9 +1,32 @@
 /* 공통요소 */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
 }
-.inner{
-    
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  font-family: "Noto Sans KR", "TTWanjudaedunsancheB", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: -0.68px;
+  word-break: keep-all;
+  color: #000;
+  font-weight: 400;
 }
