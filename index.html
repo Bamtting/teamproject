@@ -18,19 +18,37 @@
       content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
     />
     <meta property="og:description" content="현대VENUE 웹사이트입니다." />
+
+    <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- 자바스크립트 -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- 스와이퍼 js -->
+
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+
+    <!-- 파비콘 적용 -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -85,7 +103,32 @@
         </div>
       </header>
       <!-- visual -->
-      <section class="visual clearfix"></section>
+      <section class="visual clearfix">
+        <!-- Swiper -->
+        <div class="swiper visual-mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/visual01.jpg" alt="캠핑" />
+              <span class="visual-font">캠핑도 <em>VENUE</em>와 함께</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual02.jpg" alt="반려동물" />
+              <span class="visual-font"
+                >반려동물과<br />함께 타는 <em>VENUE</em></span
+              >
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual03.jpg" alt="드라이브" />
+              <span class="visual-font"
+                >다양한 도로환경에도<br />안전한 <em>VENUE</em></span
+              >
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- videos -->
       <section class="videos clearfix">
         <div class="inner"></div>
