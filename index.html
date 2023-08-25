@@ -18,24 +18,13 @@
       content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
     />
     <meta property="og:description" content="현대VENUE 웹사이트입니다." />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/font.css" />
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="images/favicon/apple-touch-icon.png"
     />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link
       rel="icon"
       type="image/png"
@@ -49,23 +38,22 @@
       href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <title>세상 즐거움 속에 혼라이프 VENUE</title>
-    <!-- Link Swiper's CSS -->
+
+    <title>세상 즐거움 속의 혼라이프 VENUE</title>
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/script_design.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <div class="wrap">
       <!-- header -->
@@ -80,32 +68,55 @@
       </section>
       <!-- design -->
       <section class="design clearfix">
-        <div class="design-wrap">
-          <div class="design-right">
-            <div class="title-txt">
-              <p>VENUE만의 특별한 디자인을 확인 해보세요</p>
+        <div class="inner">
+          <div class="design-wrap">
+            <div class="design-left">
+              <div class="title-txt">
+                <p>VENUE만의 특별한 디자인을 확인 해보세요</p>
+              </div>
+              <div class="title-subtxt">
+                <p>
+                  아이코닉한 스타일로 개성 있고 세련된 젊은 감성의
+                  라이프스타일을 구현하였습니다.
+                </p>
+              </div>
+              <img src="images/design01.png" alt="" />
             </div>
-            <div class="title-subtxt">
-              <p>
-                아이코닉한 스타일로 개성 있고 세련된 젊은 감성의 라이프스타일을
-                구현하였습니다.
-              </p>
-            </div>
-            <img src="images/design01.png" alt="" />
-          </div>
-
-          <div class="swiper designSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">1</div>
-              <div class="swiper-slide">2</div>
-              <div class="swiper-slide">3</div>
+            <div class="design-right">
+              <!-- desgin 슬라이드 -->
+              <div class="design-slide">
+                <div class="swiper designswiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div><img src="images/design02.jpg" alt="#" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div><img src="images/design03.jpg" alt="#" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div><img src="images/design04.jpg" alt="#" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// desgin 슬라이드 -->
             </div>
           </div>
         </div>
       </section>
       <!-- space -->
       <section class="space clearfix">
-        <div class="inner"></div>
+        <div class="inner">
+          <h1 class="space-title">
+            미래 지향적이고 하이테크한 이미지를 살린 실내공간
+          </h1>
+          <div class="space-box">
+            <img class="space-img01" src="images/space01.jpg" alt="#" />
+            <img class="space-img02" src="images/space02.jpg" alt="#" />
+            <button class="overview-bt"><span class="overview">Overview</span></button>
+            <button class="space-bt"><span class="space">space</span></button>
+          </div>
+        </div>
       </section>
       <!-- flux -->
       <section class="flux clearfix">
