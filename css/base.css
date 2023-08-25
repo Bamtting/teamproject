@@ -29,6 +29,7 @@ body {
   word-break: keep-all;
   color: #000;
   font-weight: 400;
+  overflow-x: hidden;
 }
 div {
   -webkit-touch-callout: none;
@@ -36,4 +37,8 @@ div {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+}
+
+.inner {
+  position: relative;
 }

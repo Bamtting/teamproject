@@ -1,1 +1,51 @@
 /* videos */
+.videos {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.videos .inner {
+  height: 900px;
+}
+
+.videos-box {
+  transition: all 0.3s ease;
+}
+.video-font {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 73.75vh;
+  height: 73.75vh;
+  background: url(../images/videofont.png) no-repeat center center;
+  background-size: 100% 100%;
+  animation: spin 20s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.video-venue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  /* width: 60.15vh; */
+  /* height: 60.15vh; */
+  background: url(../images/video2.png) no-repeat center center;
+  background-size: 100% 100% cover;
+}
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 767px) {
+}
