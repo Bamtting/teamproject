@@ -1,1 +1,31 @@
 /* gallery */
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li {
+  list-style: none;
+}
+
+.inner {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 1080px;
+  margin: 0 auto;
+  /* background-color: brown; */
+}
+.galley-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+}
+.galley-box1 > li{
+    border: 1px solid #333;
+    width: 350px;
+    height: 200px;
+}
