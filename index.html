@@ -50,7 +50,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/script_design.js"></script>
+    <script src="js/kwaw.js"></script>
+    <script src="js/kim.js"></script>
+    <script src="js/woos.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -58,13 +60,63 @@
     <div class="wrap">
       <!-- header -->
       <header class="header clearfix">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="header-logo">
+            <a href="#"><img src="images/베뉴 로고.png" alt="베뉴" /></a>
+          </div>
+          <div class="header-left">
+            <ul class="header-left-menu">
+              <li><a href="#">특징</a></li>
+              <li><a href="#">제원</a></li>
+              <li><a href="#">모델 비교</a></li>
+              <li><a href="#">가격</a></li>
+              <li><a href="#">갤러리</a></li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <ul class="header-right-menu">
+              <li><a href="#" class="header-right-box1">시승 신청</a></li>
+              <li><a href="#" class="header-right-box2">상담 신청</a></li>
+              <li><a href="#" class="header-right-box3">구매 하기</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
       <!-- visual -->
-      <section class="visual clearfix"></section>
+      <section class="visual clearfix">
+        <!-- Swiper -->
+        <div class="swiper visual-mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/visual01.jpg" alt="캠핑" />
+              <span class="visual-font">캠핑도 <em>VENUE</em>와 함께</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual02.jpg" alt="반려동물" />
+              <span class="visual-font"
+                >반려동물과<br />함께 타는 <em>VENUE</em></span
+              >
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual03.jpg" alt="드라이브" />
+              <span class="visual-font"
+                >다양한 도로환경에도<br />안전한 <em>VENUE</em></span
+              >
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- videos -->
       <section class="videos clearfix">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="videos-box">
+            <div class="video-font"></div>
+            <div class="video-venue"></div>
+          </div>
+        </div>
       </section>
       <!-- design -->
       <section class="design clearfix">
