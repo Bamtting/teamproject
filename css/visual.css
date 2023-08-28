@@ -2,9 +2,8 @@
 .visual {
   position: relative;
   display: block;
-  margin-top: 80px;
   width: 100%;
-  height: 883px;
+  height: 885px;
 }
 
 .swiper-slide {
@@ -19,11 +18,13 @@
 .visual-font {
   position: absolute;
   top: 20%;
-  right: 23%;
+  right: 20%;
   font-size: 64px;
+  font-weight: bold;
   font-weight: 500px;
   z-index: 999;
   color: #fff;
+  line-height: 1.4;
 }
 .visual-font em {
   color: #f3d849;
