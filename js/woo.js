@@ -7,13 +7,34 @@ window.addEventListener("load", function () {
     grabCursor: true,
   });
   // space
-  var swiper = new Swiper(".spaceSwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-  });
+  
+const spaceimage1 = document.getElementById("image1");
+const spaceimage2 = document.getElementById("image2");
+
+const spacebutton1 = document.getElementById("button1");
+const spacebutton2 = document.getElementById("button2");
+
+spacebutton1.addEventListener("click", () => {
+    spaceimage1.style.display = "block";
+    spaceimage2.style.display = "none";
+});
+
+spacebutton2.addEventListener("click", () => {
+    spaceimage1.style.display = "none";
+    spaceimage2.style.display = "block";
+});
+// highlight
+var highlightswiper = new Swiper(".highlight-mySwiper", {
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 });

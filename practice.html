@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .highlight-mySwiper {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -150px;
+          margin-top: -150px;
+        }
+    
+        .highlightswiper .swiper-slide {
+          background-position: center;
+          background-size: cover;
+        }
+    
+        .highlightswiper .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+</head>
+<body>
+    <div class="highlightswiper">
+        <div class="swiper highlight-mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/highlight_performance02.jpg" alt="포퍼먼스2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/highlight_safety01.jpg" alt="세이프티1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/highlight_convenience01.jpg" alt="컨비니언스1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/highlight_HGA01.jpg" alt="hga1">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".highlight-mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>
