@@ -27,4 +27,15 @@ window.addEventListener("load", function () {
     videos.currentTime = 0;
     videos.play();
   });
+  // 메뉴판 보여주기
+  $(".footer-family-inner").click(function () {
+    var familyBox = $(this).next(".footer-family-box");
+
+    // familyBox 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+    if (familyBox.is(":visible")) {
+      familyBox.slideUp();
+    } else {
+      familyBox.slideDown();
+    }
+  });
 });
