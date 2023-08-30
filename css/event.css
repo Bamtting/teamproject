@@ -1,1 +1,17 @@
 /* event */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.event-inner{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% / 2);
+    padding: 60px 0;
+}
+.event-inner img{
+    width: 601px;
+    height: 335px;
+    margin-bottom: 60px;
+}
