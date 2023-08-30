@@ -67,6 +67,10 @@
   font-weight: bold;
   color: #fff;
 }
+.design-slide .swiper-slide img{
+  width: 680px;
+  height: 700px;
+}
 
 .design-slide .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
