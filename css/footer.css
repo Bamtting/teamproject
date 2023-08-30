@@ -1,1 +1,194 @@
 /* footer */
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 440px;
+  background-color: #191718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 50px;
+}
+.footer .inner {
+  position: relative;
+  width: 1200px;
+  height: 301px;
+  margin: 0 10px auto;
+}
+.footer-logo {
+  width: 58px;
+  height: 31px;
+  margin-right: 28px;
+  margin-bottom: 99px;
+  float: left;
+}
+.footer-top-left {
+  width: 50%;
+  height: 130px;
+  float: left;
+}
+
+.footer-menu-frist {
+  margin-bottom: 20px;
+}
+.footer-menu-frist li {
+  margin-right: 5px;
+  display: inline;
+}
+
+.footer-menu-frist > li > a {
+  color: #999;
+}
+.footer-menu-frist > li:nth-child(3) > a {
+  color: #fff;
+}
+.footer-menu-frist > li::after {
+  content: "ㅣ";
+  color: #999;
+}
+.footer-menu-frist > li:last-child::after {
+  content: none;
+}
+.footer-menu-two {
+  margin-bottom: 20px;
+}
+.footer-menu-two > li {
+  margin-right: 5px;
+  display: inline;
+}
+.footer-menu-two > li > a {
+  color: #999;
+}
+
+.footer-menu-two > li::after {
+  content: "ㅣ";
+  color: #999;
+}
+.footer-menu-two > li:last-child::after {
+  content: none;
+}
+
+.footer-top-left span {
+  display: block;
+  color: #999;
+  margin-bottom: 10px;
+}
+.footer-top-left p {
+  color: #999;
+  font-size: 12px;
+}
+
+.footer-top-right {
+  width: 50%;
+  height: 130px;
+  float: left;
+}
+
+.footer-social {
+  width: 270px;
+  height: 31px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  float: right;
+}
+.footer-social li {
+  margin-right: 5px;
+  float: left;
+}
+.footer-social li img {
+  width: 30px;
+  height: 32px;
+}
+.footer-family-inner {
+  width: 270px;
+  height: 30px;
+  margin-right: 1px;
+  line-height: 30px;
+  padding: 0 13px;
+  float: right;
+  background-color: #191718;
+  border: 1px solid #999;
+
+  cursor: pointer;
+}
+.footer-family-inner > span {
+  float: left;
+}
+.fa-caret-down {
+  line-height: 30px;
+  float: right;
+}
+.footer-family-box {
+  position: absolute;
+  right: 1px;
+  bottom: 250px;
+  width: 270px;
+  padding: 10px;
+  background-color: #191718;
+  float: left;
+  text-align: left;
+  display: none;
+  border: 1px solid #999;
+}
+
+.footer-family-box > li {
+  padding: 5px;
+}
+.footer-family-box > li > a {
+  color: #999;
+  font-size: 13px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer-family-inner span {
+  font-size: 13px;
+  color: #999;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer-row {
+  width: 1200px;
+  height: 150px;
+  float: left;
+  border-top: 1px solid #999;
+  color: #999;
+}
+.footer-row-box {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.footer-row-box li {
+  float: left;
+  width: 20%;
+  margin-top: 18px;
+  word-break: keep-all;
+}
+.footer-row li img {
+  float: left;
+}
+.footer-row li p {
+  margin-left: 45px;
+  margin-right: 10px;
+  line-height: 18px;
+}
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+@media all and (min-width:1024px) and (max-width:1279px) { 
+  
+} 
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+  
+} 
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+  
+} 
+
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+  
+}
