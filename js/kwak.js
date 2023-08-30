@@ -8,6 +8,7 @@ window.addEventListener("load", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
     autoplay: {
       // 자동 슬라이드 설정 , 비 활성화 시 false
 
