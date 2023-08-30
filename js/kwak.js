@@ -8,6 +8,28 @@ window.addEventListener("load", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+      // 자동 슬라이드 설정 , 비 활성화 시 false
+
+      delay: 1000, // 시간 설정
+
+      disableOnInteraction: true, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+    },
+  });
+  // 비주얼 버튼 색상 변경
+
+  // 스와이프 제어 버튼
+  $(".fa-play").on("click", function () {
+    $(".fa-pause").removeClass("active");
+    $(this).addClass("active");
+    visualswiper.autoplay.start();
+    return false;
+  });
+  $(".fa-pause").on("click", function () {
+    $(".fa-play").removeClass("active");
+    $(this).addClass("active");
+    visualswiper.autoplay.stop();
+    return false;
   });
   // 비디오 제어
   const videoPoster = document.querySelector(".videos-poster");

@@ -43,6 +43,7 @@
     <title>세상 즐거움 속에 혼라이프 VENUE</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -54,9 +55,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script src="js/kwak.js"></script>
     <script src="js/woo.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -87,7 +88,6 @@
       </header>
       <!-- visual -->
       <section class="visual clearfix">
-        <!-- Swiper -->
         <div class="swiper visual-mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -107,9 +107,12 @@
               >
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
+          <!-- 멈춤버튼 -->
+          <div class="video-playbox">
+            <i class="fa-solid fa-play active"></i>
+            <i class="fa-solid fa-pause"></i>
+          </div>
         </div>
       </section>
       <!-- videos -->
