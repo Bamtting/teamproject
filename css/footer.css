@@ -5,15 +5,16 @@
   width: 100%;
   height: 440px;
   background-color: #191718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 50px;
 }
 .footer .inner {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 1200px;
   height: 301px;
-  margin: 0 auto;
+  margin: 0 10px auto;
 }
 .footer-logo {
   width: 58px;
@@ -25,6 +26,7 @@
 .footer-top-left {
   width: 50%;
   height: 130px;
+  float: left;
 }
 
 .footer-menu-frist {
@@ -68,21 +70,26 @@
 }
 
 .footer-top-left span {
+  display: block;
   color: #999;
+  margin-bottom: 10px;
 }
 .footer-top-left p {
   color: #999;
+  font-size: 12px;
 }
 
 .footer-top-right {
   width: 50%;
   height: 130px;
+  float: left;
 }
 
 .footer-social {
   width: 270px;
   height: 31px;
-  margin-left: 330px;
+  margin-left: 200px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   float: right;
@@ -98,6 +105,7 @@
 .footer-family-inner {
   width: 270px;
   height: 30px;
+  margin-right: 1px;
   line-height: 30px;
   padding: 0 13px;
   float: right;
@@ -110,13 +118,13 @@
   float: left;
 }
 .fa-caret-down {
-  line-height: 28px;
+  line-height: 30px;
   float: right;
 }
 .footer-family-box {
   position: absolute;
-  right: 0px;
-  bottom: 180px;
+  right: 1px;
+  bottom: 250px;
   width: 270px;
   padding: 10px;
   background-color: #191718;
@@ -138,4 +146,30 @@
   font-size: 13px;
   color: #999;
   font-family: "Noto Sans KR", sans-serif;
+}
+.footer-row {
+  width: 1200px;
+  height: 150px;
+  float: left;
+  border-top: 1px solid #999;
+  color: #999;
+}
+.footer-row-box {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.footer-row-box li {
+  float: left;
+  width: 20%;
+  margin-top: 18px;
+  word-break: keep-all;
+}
+.footer-row li img {
+  float: left;
+}
+.footer-row li p {
+  margin-left: 45px;
+  margin-right: 10px;
+  line-height: 18px;
 }
