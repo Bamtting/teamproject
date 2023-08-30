@@ -13,10 +13,10 @@
   background-color: #f3d849;
   transition: all 0.5s;
 }
-.inner {
+/* .inner {
   width: 1200px;
   margin: 0 auto;
-}
+} */
 .header-logo {
   width: 20%;
   float: left;

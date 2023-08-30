@@ -7,11 +7,31 @@
 .event-inner{
     display: flex;
     justify-content: space-between;
-    width: calc(100% / 2);
+    /* width: calc(100% / 2); */
     padding: 60px 0;
+    position: relative;
 }
 .event-inner img{
-    width: 601px;
-    height: 335px;
+    width: 50%;
+    /* height: 335px; */
     margin-bottom: 60px;
+    object-fit: cover;
+    /* position: absolute; */
 }
+
+/* 반응형 */
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+@media all and (max-width:1024px) { 
+    .event-inner{flex-wrap: wrap;}
+    .event-inner img{
+      width: 100%;
+      margin-bottom: 2.5%;
+      /* text-align: center; */
+
+    }
+} 
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (max-width:768px) { 
+  
+} 
