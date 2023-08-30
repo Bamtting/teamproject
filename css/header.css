@@ -1,5 +1,6 @@
 /* header */
 .header {
+  transition: all 0.5s;
   position: relative;
   display: block;
   width: 100%;
