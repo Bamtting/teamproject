@@ -1,1 +1,103 @@
 /* gallery */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.gallery {
+  padding-bottom: 300px;
+  /* background-color: cornflowerblue; */
+}
+
+.galley-title {
+  font-size: 48px;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  text-align: center;
+  /* padding-top: 200px; */
+  margin-top: 200px;
+  margin-bottom: 90px;
+}
+.galley-more {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 100px;
+  color: #59c3ff;
+  cursor: pointer;
+}
+.galley_inner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.gallery-box {
+  width: calc(95% / 3);
+}
+/* .gallery-box1 {
+}
+
+.gallery-box2 {
+} */
+.gallery-box1,
+.gallery-box3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+.gallery-box1 img,
+.gallery-box3 img {
+  height: 47.5%;
+}
+/* 
+.gallery-box1 li:hover img{
+  transform: scale(1.1);
+}
+
+.gallery-box2:hover img{
+  transform: scale(1.1);
+
+} */
+
+/* 반응형 */
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (max-width: 1024px) {
+  .galley_inner{flex-wrap: wrap;}
+  .gallery-box1,
+  .gallery-box2{
+    width: 49%;
+  }
+  .gallery-box3{width: 100%; justify-content: space-between; margin-top: 2.5%;}
+  .gallery-box3 img{width: 49%; height: auto;}
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (max-width: 768px) {
+  .gallery-box1,
+  .gallery-box2,
+  .gallery-box3{
+    width: 100%;
+    margin-bottom: 2.5%;
+    margin-top: 0;
+  }
+  .gallery-box1 img,
+  .gallery-box2 img,
+  .gallery-box3 img{
+    height: auto; width: 100%;
+  }
+  .gallery-box1 img:first-child,
+  .gallery-box3 img:first-child{
+    margin-bottom: 2.5%;
+  }
+}
