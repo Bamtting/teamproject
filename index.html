@@ -26,25 +26,11 @@
       content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
     />
     <meta property="og:description" content="현대VENUE 웹사이트입니다." />
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- 스와이퍼 js -->
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
     <script src="js/swiper/swiper.min.js"></script>
     <!-- 파비콘 적용 -->
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -67,6 +53,13 @@
     <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <title>세상 즐거움 속에 혼라이프 VENUE</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- swiper -->
     <link
@@ -112,7 +105,6 @@
       </header>
       <!-- visual -->
       <section class="visual clearfix">
-        <!-- Swiper -->
         <div class="swiper visual-mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -132,17 +124,35 @@
               >
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
+          <!-- 멈춤버튼 -->
+          <div class="video-playbox">
+            <i class="fa-solid fa-play active"></i>
+            <i class="fa-solid fa-pause"></i>
+          </div>
         </div>
       </section>
       <!-- videos -->
       <section class="videos clearfix">
         <div class="inner">
-          <div class="videos-box">
+          <!-- UI -->
+          <div class="videos-poster">
             <div class="video-font"></div>
             <div class="video-venue"></div>
+            <div class="video-btn"></div>
+          </div>
+          <!-- 비디오 -->
+          <div class="video-box">
+            <div id="video_bridge">
+              <div class="bridge_panel autoplay">
+                <video class="bridgeVideo" controls playsinline>
+                  <source
+                    src="images/mp4/videobtn_video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -411,7 +421,124 @@
       </section>
       <!-- footer -->
       <footer class="footer clearfix">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="footer-top-left">
+            <img src="images/베뉴 로고.png" alt="로고" class="footer-logo" />
+            <ul class="footer-menu-frist">
+              <li><a href="#">모바일 App</a></li>
+              <li><a href="#">저작권안내</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">프라이버시 센터</a></li>
+            </ul>
+            <ul class="footer-menu-two">
+              <li><a href="#">윤리경영 사이버 감사실</a></li>
+              <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+            <span>고객센터 : 080-600-6000</span>
+            <p>COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="footer-top-right">
+            <ul class="footer-social">
+              <li>
+                <a href="#"><img src="images/페이스북.png" alt="페이스북" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/유튜브.png" alt="유튜브" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/네이버 포스트.png" alt="네이버포스트"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/트위터.png" alt="트위터" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/인스타그램.png" alt="인스타그램"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/현대 트럭&버스 유튜브.png"
+                    alt="현대 트럭&버스 유튜브 새창열기"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/현대 트럭&버스 네이버포스트.png"
+                    alt="현대 트럭&버스 네이버 포스트 새창열기"
+                /></a>
+              </li>
+            </ul>
+            <div class="footer-family">
+              <button class="footer-family-inner">
+                <span>Family site</span>
+                <i class="fa-solid fa-caret-down" style="color: #999"></i>
+              </button>
+              <ul class="footer-family-box">
+                <li><a href="#">현대자동차그룹</a></li>
+                <li><a href="#">제니시스닷컴</a></li>
+                <li><a href="#">캐스퍼 온라인</a></li>
+                <li><a href="#">N 브랜드</a></li>
+                <li><a href="#">경제산업연구센터</a></li>
+                <li><a href="#">현대 모터스튜디오</a></li>
+                <li><a href="#">키즈현대</a></li>
+                <li><a href="#">동반성장 사이트</a></li>
+                <li><a href="#">현대 드라이빙 아카데미</a></li>
+                <li><a href="#">현대 컬렉션 온라인 샵</a></li>
+                <li><a href="#">고객소통채널 H-ear</a></li>
+                <li><a href="#">전북 현대모터스 축구단</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-row">
+            <ul class="footer-row-box">
+              <li>
+                <img src="images/footer-mark-wa.png" alt="웹접근성" />
+                <p>웹 접근성 품질인증</p>
+              </li>
+              <li>
+                <img src="images/footer-mark01.png" alt="우수디자인" />
+                <p>우수디자인 지식경제부선정</p>
+              </li>
+              <li>
+                <img src="images/footer-mark03.png" alt="우수기관" />
+                <p>가족친화 우수기관</p>
+              </li>
+              <li>
+                <img src="images/footer-mark04.png" alt="a/s1위" />
+                <p>
+                  2022년 한국서비스품질지수 (KS- SQI) 자동차 A/S 부문 8년 연속
+                  1위
+                </p>
+              </li>
+              <li>
+                <img src="images/img_mark_ksqei.png" alt="만족지수" />
+                <p>2022년 한국품질만족지수 (KS- QEI) 조사 12개 부문 1위</p>
+              </li>
+              <li>
+                <img src="images/footer-mark06.png" alt="만족도" />
+                <p>
+                  2023년 국가고객만족도(NCSI) 조사 대상 전 부문 1위 수상(준중형,
+                  중형,준대형,대형,컴팩트RV, 대형RV,전기차)
+                </p>
+              </li>
+              <li>
+                <img src="images/footer-mark07.png" alt="승용차" />
+                <p>
+                  KMAC 선정 2022년 한국산업의 고객만족도 일반승용차 부문 29년
+                  연속 RV승용차 부문 19년 연속 1위
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
