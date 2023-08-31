@@ -26,25 +26,11 @@
       content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
     />
     <meta property="og:description" content="현대VENUE 웹사이트입니다." />
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- 스와이퍼 js -->
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
     <script src="js/swiper/swiper.min.js"></script>
     <!-- 파비콘 적용 -->
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -67,6 +53,13 @@
     <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <title>세상 즐거움 속에 혼라이프 VENUE</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- swiper -->
     <link
@@ -118,7 +111,6 @@
       </header>
       <!-- visual -->
       <section class="visual clearfix">
-        <!-- Swiper -->
         <div class="swiper visual-mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -138,17 +130,35 @@
               >
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
+          <!-- 멈춤버튼 -->
+          <div class="video-playbox">
+            <i class="fa-solid fa-play active"></i>
+            <i class="fa-solid fa-pause"></i>
+          </div>
         </div>
       </section>
       <!-- videos -->
       <section class="videos clearfix">
         <div class="inner">
-          <div class="videos-box">
+          <!-- UI -->
+          <div class="videos-poster">
             <div class="video-font"></div>
             <div class="video-venue"></div>
+            <div class="video-btn"></div>
+          </div>
+          <!-- 비디오 -->
+          <div class="video-box">
+            <div id="video_bridge">
+              <div class="bridge_panel autoplay">
+                <video class="bridgeVideo" controls playsinline>
+                  <source
+                    src="images/mp4/videobtn_video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -175,18 +185,12 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div><img src="images/design02.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl1-1"></button>
-                      <button class="imgcloseup cl1-2"></button>
-                      <button class="imgcloseup cl1-3"></button>
                     </div>
                     <div class="swiper-slide">
                       <div><img src="images/design03.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl2-1"></button>
-                      <button class="imgcloseup cl2-2"></button>
                     </div>
                     <div class="swiper-slide">
                       <div><img src="images/design04.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl3-1"></button>
                     </div>
                   </div>
                 </div>
@@ -223,23 +227,23 @@
           </div>
           <div class="more"><span>MORE &rang;</span></div>
           <div class="flux-imgbox-container">
-            <div class="imgbox ">
+            <div class="imgbox">
               <a href="#">
-                <img src="images/flux01.jpg"/>
-                <span class="flux-name ">핫스템 라디에이터 그릴</span>
+                <img src="images/flux01.jpg" alt="플럭스1" />
               </a>
+              <span class="flux-name">핫스템 라디에이터 그릴</span>
             </div>
-            <div class="imgbox ">
+            <div class="imgbox">
               <a href="#">
-                <img src="images/flux02.jpg"/>
-                <span class="flux-name ">C필러 뱃지</span>
+                <img src="images/flux02.jpg" alt="플럭스2" />
               </a>
+              <span class="flux-name">C필러 뱃지</span>
             </div>
-            <div class="imgbox ">
+            <div class="imgbox">
               <a href="#">
-                <img src="images/flux03.jpg"/>
-                <span class="flux-name ">리어스키드</span>
+                <img src="images/flux03.jpg" alt="플럭스3" />
               </a>
+              <span class="flux-name">리어스키드</span>
             </div>
           </div>
           <p class="flux-advice">
@@ -416,74 +420,68 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-        </div>
       </section>
       <!-- gallery -->
       <section class="gallery clearfix">
         <div class="inner">
-          <h2 class="galley-title">gallery</h2>
+          <h1 class="galley-title">gallery</h1>
+          <div class="galley-more">
+            <span>더보기 <i class="fa-solid fa-chevron-right"></i></span>
+          </div>
           <div class="galley_inner">
-            <div class="gallery-box-img">
-              <div class="gallery-box1">
-                <ul>
-                  <li ><a href="#"><img src="images/gallery01.jpg" alt="갤러리1"></a></li>
-                  <li ><a href="#"><img src="images/gallery02.png" alt="갤러리2"></a></li>
-                </ul>
-              </div>
-              <div class="gallery-box2">
-                <ul>
-                  <li ><a href="#"><img src="images/gallery03.jpg" alt="갤러리3"></a></li>
-                </ul>
-              </div>
-              <div class="gallery-box3">
-                <ul>
-                  <li ><a href="#"><img src="images/gallery04.jpg" alt="갤러리4"></a></li>
-                  <li ><a href="#"><img src="images/gallery05.jpg" alt="갤러리5"></a></li>
-                </ul>
-              </div>
+            <div class="gallery-box gallery-box1">
+              <img src="images/gallery01.jpg" alt="갤러리1">
+              <img src="images/gallery02.png" alt="갤러리2">
+              
             </div>
-        </div>
+            <div class="gallery-box gallery-box2">
+                <img src="images/gallery03.jpg" alt="갤러리3">
+            </div>
+            <div class="gallery-box gallery-box3">
+                <img src="images/gallery04.jpg" alt="갤러리4">
+                <img src="images/gallery05.jpg" alt="갤러리5">
+            </div>
+          </div>
         </div>
       </section>
       <!-- news -->
       <section class="news clearfix">
         <div class="inner">
-          <h2 class="news-title"><span>VENUE</span> News</h2>
+          <h1 class="news-title"><span>VENUE</span> News</h1>
           <div class="news_inner">
+            <div class="news-more">
+              <span>더보기 <i class="fa-solid fa-chevron-right"></i></span>
+            </div>
           <div id="news-list">
             <ul>
-              <li><img src="images/new1.png" alt="뉴스1"></li>
+              <li><a href="#"><img src="images/new1.png" alt="뉴스1"></a></li>
               <li>
                 <b>현대 자동차가 소형 스포츠 유틸리티차량(suv) '베뉴' 를 출시했습니다. </b>
                 <p>현대차는 이 차의 주요고객층으로 1980년대 초부터 2000년대 초에
-                  태어난 '밀레니얼 세대'를 꼽았습니다.
+                  태어난 '밀레니얼 세대'를 꼽았습니다...
                 </p>
               </li>
             </ul>        
           </div>
           <div id="news-list">
             <ul>
-              <li><img src="images/new2.jpg" alt="뉴스2"></li>
+              <li><a href="#"><img src="images/new2.jpg" alt="뉴스2"></a></li>
               <li>
                 <b>현대 자동차가 '베뉴'가 올해의차에 선정 </b>
                 <p>현대차는 인도 법인은 베뉴가 현지에서 최고의 권위를 자랑하는
-                  '인도 올해의차(india Car of the Year 2020)'로 선정됐다고 밝혔다.
+                  '인도 올해의차(india Car of the Year 2020)'로 선정됐다고 밝혔다......
                 </p>
               </li>
             </ul>        
           </div> 
           <div id="news-list">
             <ul>
-              <li><img src="images/new3.jpg" alt="뉴스3"></li>
+              <li><a href="#"><img src="images/new3.jpg" alt="뉴스3"></a></li>
               <li>
                 <b>운전면허 학원 차량의 세대교체진행중 </b>
                 <p>운전면허학원과 면허시험장에서 운행되는차량이
                   현대자동차의 경형suv'베뉴'로 세대교체되고있다.
-                  자동차 시장에서 불고있는 suv열품이 운전면허 시장으로 이어지는 모양이다.
+                  자동차 시장에서 불고있는 suv열품이 운전면허 시장으로 이어지는 모양이다......
                 </p>
               </li>
             </ul>        
@@ -493,85 +491,77 @@
       <!-- review -->
       <section class="review clearfix">
         <div class="inner">
-          <section class="review clearfix">
-            <div class="inner">
-              <div class="review-title">
-                  <h1>구매후기</h1>
-                  <p>고객님이 남긴 생생한 후기를 확인해보세요.</p>
-                </div>
-                <div class="review-more">
-                  <span>구매 후기 더보기 <i class="fa-solid fa-chevron-right"></i></span>
-                </div>
-                <div class="review-inner">
-                  <div class="review-box">
-                    <a href="#"><img src="images/review01.jpg" alt="리뷰1"></a>
-                    <span></span>
-                    <ul>
-                      <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                    <p>첫차 구매라 모르는 점이 많았는데 계약부터 출고까지
-                      늘 한결같이 친절하게 응대 해주셔서 감사했습니다.
-                      덕분에 문제없이 인수받은거 같습니다.
-                    </p>
-                    <p>2023-08-01 김*철</p>
-                  </div>
-                  <div class="review-box">
-                    <a href="#"><img src="images/review02.jpg" alt="리뷰2"></a>
-                    <span></span>
-                    <ul>
-                      <li>구매 모델: 베뉴 가솔린 1.6 FLUX 2WD IVT</li>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                    <p>사정이 생겨 차량을 빨리 구입해야 하는 상황이었는데 계약부터 빠른 출고까지 꼼꼼하게 챙겨 주시고 중간중간 진행상황에 대해서 연락을 주시는등 계약부터 출고까지 일사천리로 처리해주신 부장님 감사합니다^^
-                    </p>
-                    <p>2023-08-10 김*우</p>
-                  </div>
-                  <div class="review-box">
-                    <a href="#"><img src="images/review03.jpg" alt="리뷰3"></a>
-                    <span></span>
-                    <ul>
-                      <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                    <p>한마디로 베뉴 너무너무 맘에 듭니다. 경차운전했는데 베뉴는 승차감이 최고입니다. 차가 조용하고 안전사양도 잘되어 있어 1년기다린 보람이 있습니다. 여성분들이 운전하기 딱좋은차입니다. 베뉴 카페에 가입해서 좋은정보도 많이 얻었고 자동차 썬팅 블랙박스해주신 현대담당자님 감사합니다.베뉴출고될때까지 신경 써주셔서 고맙습니다. 베뉴 사랑합니다~♡♡♡
-                    </p>
-                    <p>2023-08-15 곽*민</p>
-                  </div>
-              </div>
+          <div class="review-title">
+              <h1>구매후기</h1>
+              <p>고객님이 남긴 생생한 후기를 확인해보세요.</p>
             </div>
-          </section>
+            <div class="review-more">
+              <span>구매 후기 더보기 <i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+            <div class="review-inner">
+              <div class="review-box">
+                <a href="#"><img src="images/review01.jpg" alt="리뷰1"></a>
+                <span></span>
+                <ul>
+                  <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
+                  <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </li>
+                </ul>
+                <p>첫차 구매라 모르는 점이 많았는데 계약부터 출고까지
+                  늘 한결같이 친절하게 응대 해주셔서 감사했습니다.
+                  덕분에 문제없이 인수받은거 같습니다.
+                </p>
+                <p>2023-08-01 김*철</p>
+              </div>
+              <div class="review-box">
+                <a href="#"><img src="images/review02.jpg" alt="리뷰2"></a>
+                <span></span>
+                <ul>
+                  <li>구매 모델: 베뉴 가솔린 1.6 FLUX 2WD IVT</li>
+                  <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </li>
+                </ul>
+                <p>사정이 생겨 차량을 빨리 구입해야 하는 상황이었는데 계약부터 빠른 출고까지 꼼꼼하게 챙겨 주시고 중간중간 진행상황에 대해서 연락을 주시는등 계약부터 출고까지 일사천리로 처리해주신 부장님 감사합니다^^
+                </p>
+                <p>2023-08-10 김*우</p>
+              </div>
+              <div class="review-box">
+                <a href="#"><img src="images/review03.jpg" alt="리뷰3"></a>
+                <span></span>
+                <ul>
+                  <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
+                  <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </li>
+                </ul>
+                <p>한마디로 베뉴 너무너무 맘에 듭니다. 경차운전했는데 베뉴는 승차감이 최고입니다. 차가 조용하고 안전사양도 잘되어 있어 1년기다린 보람이 있습니다. 여성분들이 운전하기 딱좋은차입니다. 베뉴 카페에 가입해서 좋은정보도 많이 얻었고 자동차 썬팅 블랙박스해주신 현대담당자님 감사합니다.베뉴출고될때까지 신경 써주셔서 고맙습니다. 베뉴 사랑합니다~♡♡♡
+                </p>
+                <p>2023-08-15 곽*민</p>
+              </div>
+          </div>
         </div>
       </section>
       <!-- event -->
       <section class="event clearfix">
         <div class="inner">
-          <section class="event clearfix">
-            <div class="inner">
-              <div class="event-inner">
-                <img src="images/event1.png" alt="이벤트1">
-                <img src="images/event2.png" alt="이벤트2">
-              </div>
-            </div>
-          </section>
+          <div class="event-inner">
+            <img src="images/event1.png" alt="이벤트1">
+            <img src="images/event2.png" alt="이벤트2">
+          </div>
         </div>
       </section>
       <!-- footer -->
@@ -651,7 +641,6 @@
               </ul>
             </div>
           </div>
-
           <div class="footer-row">
             <ul class="footer-row-box">
               <li>
@@ -694,7 +683,6 @@
             </ul>
           </div>
         </div>
-      </footer>
       </footer>
     </div>
   </body>
