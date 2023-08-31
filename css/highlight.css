@@ -94,6 +94,9 @@
 .performance-p {
   /* display: none; */
 }
+.highlight-txt ul li ul{
+  display: none;
+}
 .highlight-txt p {
   margin-top: 20%;
   text-align: left;
