@@ -1,6 +1,20 @@
 /* flux */
+/* aos */
+/* 텍스트 애니메이션 초기 상태 */
+[data-aos="fade-up"] {
+  opacity: 0; /* 초기 투명도를 0으로 설정하여 숨깁니다. */
+  transform: translateY(20px); /* 초기 위치를 아래로 이동시킵니다. */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* 텍스트 애니메이션 활성 상태 */
+[data-aos="fade-up"].aos-animate {
+  opacity: 1; /* 애니메이션 활성 상태에서 투명도를 1로 설정하여 나타냅니다. */
+  transform: translateY(0); /* 애니메이션 활성 상태에서 위치를 초기 상태로 되돌립니다. */
+}
+/* ================================ */
 .flux {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   position: relative;
   display: block;
   overflow: hidden;

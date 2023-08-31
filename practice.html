@@ -1,67 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS 라이브러리를 CDN을 통해 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <title>Document</title>
-    <style>
-    
-        .highlight-mySwiper {
-          width: 300px;
-          height: 300px;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          margin-left: -150px;
-          margin-top: -150px;
-        }
-    
-        .highlightswiper .swiper-slide {
-          background-position: center;
-          background-size: cover;
-        }
-    
-        .highlightswiper .swiper-slide img {
-          display: block;
-          width: 100%;
-        }
-      </style>
-</head>
-<body>
-    <div class="highlightswiper">
-        <div class="swiper highlight-mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/highlight_performance02.jpg" alt="포퍼먼스2">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/highlight_safety01.jpg" alt="세이프티1">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/highlight_convenience01.jpg" alt="컨비니언스1">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/highlight_HGA01.jpg" alt="hga1">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+  </head>
+  <style>
+    /* 초기 상태 */
+    [data-aos="fade-up"] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    /* 애니메이션 활성 상태 */
+    [data-aos="fade-up"].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  <body>
+    <div data-aos="fade-up">
+      <h1>gkgkgkgkgkgkgkgkggk</h1>
     </div>
-      <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".highlight-mySwiper", {
-      effect: "cube",
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
+  </body>
 </html>
