@@ -31,12 +31,14 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
-
-  var hgaSubtitle = document.querySelectorAll(".performance-subtitle");
-  hgaSubtitle.forEach((hgaSubtitle) => {
+  // highlighttxth3.addEventListener("click", function () {
+  //   highlighttxtp.style.display = "block";
+  // });
+  var hgaSubtitle = document.querySelectorAll('.hga-subtitle');
+  hgaSubtitle.forEach(hgaSubtitle => {
     hgaSubtitle.addEventListener("click", function () {
       var contents = hgaSubtitle.nextElementSibling;
-      contents.style.display = "block";
-    });
-  });
+      hgaSubtitle.style.display = "block"
+    })
+  })
 });
