@@ -31,14 +31,16 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  
   // highlighttxth3.addEventListener("click", function () {
   //   highlighttxtp.style.display = "block";
   // });
-  var hgaSubtitle = document.querySelectorAll('.hga-subtitle');
+  var hgaSubtitle = document.querySelectorAll('.performance-subtitle');
   hgaSubtitle.forEach(hgaSubtitle => {
     hgaSubtitle.addEventListener("click", function () {
       var contents = hgaSubtitle.nextElementSibling;
       hgaSubtitle.style.display = "block"
     })
   })
+    
 });
