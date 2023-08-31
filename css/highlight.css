@@ -19,7 +19,7 @@
 .swiper-wrapper {
   width: 100%;
   height: 100%;
-  margin-top: 8%;
+  
   /* background-color: rgba(0,0,0,0.68); */
 }
 /* Swiper  */
@@ -91,10 +91,8 @@
   font-weight: 500;
   color: #000;
 }
-.performance-p {
-  /* display: none; */
-}
-.highlight-txt ul li ul{
+
+.highlight-txt ul li ul {
   display: none;
 }
 .highlight-txt p {
@@ -141,7 +139,7 @@
   border-radius: 50%;
   color: greenyellow;
 }
-.performance-subtitle + ul{
+.performance-subtitle + ul {
   display: none;
 }
 .performance-subtitle.active + ul {

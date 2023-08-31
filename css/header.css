@@ -24,6 +24,7 @@
 }
 .modal-top {
   position: fixed;
+  display: none;
   bottom: -250px;
   width: 70px;
   height: 70px;
@@ -41,7 +42,6 @@
 
 /* header */
 .header {
-  transition: all 0.5s;
   position: relative;
   display: block;
   width: 100%;
@@ -56,13 +56,13 @@
   justify-content: space-between;
 }
 .header-logo {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 .header-logo img {
   width: 130px;
   height: 50px;
-  margin: 18px;
+  margin: 15px 0px;
 }
 .header-menu {
   width: 50%;
@@ -78,13 +78,68 @@
   text-align: center;
 }
 .header-menu-box li a {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: #000;
 }
 
 @media all and (max-width: 1024px) {
+  .modal {
+    width: 60px;
+    height: 330px;
+    padding: 5px;
+  }
+  .modal li a img {
+    width: 50px;
+  }
+  .modal-top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .modal-top img {
+    width: 40px;
+    height: 40px;
+  }
+  .header .inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header-logo {
+    width: 200px;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .header-menu {
+    float: left;
+  }
+  .header-menu-box {
+    justify-content: end;
+  }
+  .header-menu-box li a {
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width: 768px) {
+  .header {
+    padding: 0 30px;
+  }
+  .header > .inner {
+    padding: 0;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .header-logo img {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px;
+  }
+  .header-menu-box {
+    justify-content: center;
+  }
+  .header-menu-box li a {
+    font-size: 16px;
+  }
 }
