@@ -31,7 +31,6 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
-  
   // highlighttxth3.addEventListener("click", function () {
   //   highlighttxtp.style.display = "block";
   // });
@@ -42,5 +41,4 @@ window.addEventListener("load", function () {
       hgaSubtitle.style.display = "block"
     })
   })
-    
 });
