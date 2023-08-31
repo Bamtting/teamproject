@@ -72,6 +72,9 @@
   height: 500px;
   width: 500px;
 }
+.highlight-txt ul li ul {
+  display: none;
+}
 .highlight-txt {
   /* float: right; */
   width: 40%;
@@ -140,10 +143,4 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   color: greenyellow;
-}
-.performance-subtitle + ul{
-  display: none;
-}
-.performance-subtitle.active + ul {
-  display: block;
 }
