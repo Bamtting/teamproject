@@ -31,21 +31,12 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
-  
-  // highlighttxth3.addEventListener("click", function () {
-  //   highlighttxtp.style.display = "block";
-  // });
-     // 클릭 이벤트 핸들러 함수
-     function addClassToElements() {
-      // 모든 클래스를 추가할 대상 요소들을 선택합니다.
-      var elements = document.querySelectorAll('.performance-subtitle');
 
-      // 요소들에 클래스를 추가합니다.
-      elements.forEach(function(element) {
-          element.classList.add('active');
-      });
-  }
-
-  // 클릭 이벤트를 감지하고 함수를 실행합니다.
-  document.addEventListener('click', addClassToElements);
+  var hgaSubtitle = document.querySelectorAll(".performance-subtitle");
+  hgaSubtitle.forEach((hgaSubtitle) => {
+    hgaSubtitle.addEventListener("click", function () {
+      var contents = hgaSubtitle.nextElementSibling;
+      contents.style.display = "block";
+    });
+  });
 });
