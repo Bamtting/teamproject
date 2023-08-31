@@ -33,7 +33,7 @@ body {
   color: #191919;
   word-break: keep-all;
   overflow-x: hidden;
-  min-width: 480px;
+  min-width: 320px;
 }
 .clearfix::after {
   position: relative;
@@ -48,5 +48,3 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
-
-

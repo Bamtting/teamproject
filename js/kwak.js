@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     },
 
     autoplay: {
-      delay: 1000,
+      delay: 2500,
 
       disableOnInteraction: true,
     },
@@ -19,12 +19,12 @@ window.addEventListener("load", function () {
   $(function () {
     // 보이기 | 숨기기
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 900) {
-        //250 넘으면 버튼이 보여짐니다.
+      if ($(this).scrollTop() > 1000) {
         $(".modal-top").fadeIn();
-        $(".modal-top").css("left", $("#sidebar").offset().left);
+        $(".modal").fadeIn();
       } else {
         $(".modal-top").fadeOut();
+        $(".modal").fadeOut();
       }
     });
     // 버튼 클릭시

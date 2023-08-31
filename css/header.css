@@ -5,39 +5,45 @@
   top: 50%;
   transform: translateY(-50%);
   width: 70px;
-  height: 400px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 9999;
-  box-shadow: 1px 1px 10px 0 #4e4e4e;
+  box-shadow: 1px 1px 10px 0 #4e4e4e10;
+  padding: 10px 0;
 }
 
 .modal li {
   text-align: center;
+  margin-bottom: 19px;
+}
+.modal li:last-child {
+  margin-bottom: 0;
 }
 .modal li a {
   font-weight: 700;
   font-size: 14px;
 }
 .modal li a img {
-  width: 65px;
+  width: 30px;
 }
 .modal-top {
   position: fixed;
   display: none;
-  bottom: -250px;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 1px 1px 10px 0 #4e4e4e;
+  box-shadow: 1px 1px 10px 0 #4e4e4e10;
   cursor: pointer;
 }
 .modal-top img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* header */
@@ -50,8 +56,6 @@
   background-color: #fff;
 }
 .header .inner {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -72,7 +76,6 @@
   justify-content: space-between;
 }
 .header-menu-box li {
-  width: 100px;
   height: 80px;
   line-height: 80px;
   text-align: center;
@@ -85,36 +88,27 @@
 
 @media all and (max-width: 1024px) {
   .modal {
-    width: 60px;
-    height: 330px;
-    padding: 5px;
-  }
-  .modal li a img {
     width: 50px;
+  }
+  .modal img {
+    width: 25px;
+  }
+  .modal li a {
+    font-size: 13px;
   }
   .modal-top {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .modal-top img {
     width: 40px;
     height: 40px;
+    line-height: 40px;
   }
-  .header .inner {
-    display: flex;
-    justify-content: flex-start;
+  .modal-top img {
+    width: 30px;
+    height: 30px;
   }
   .header-logo {
     width: 200px;
     text-align: center;
     margin: 0 20px;
-  }
-  .header-menu {
-    float: left;
-  }
-  .header-menu-box {
-    justify-content: end;
   }
   .header-menu-box li a {
     font-size: 20px;
@@ -122,6 +116,18 @@
 }
 
 @media all and (max-width: 768px) {
+  .modal li a {
+    font-size: 12px;
+  }
+  .modal-top {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .modal-top img {
+    width: 20px;
+    height: 20px;
+  }
   .header {
     padding: 0 30px;
   }
@@ -136,9 +142,7 @@
     height: 40px;
     margin: 20px 0px;
   }
-  .header-menu-box {
-    justify-content: center;
-  }
+
   .header-menu-box li a {
     font-size: 16px;
   }
