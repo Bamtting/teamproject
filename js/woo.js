@@ -1,5 +1,18 @@
 // 작성자 : 김우철
 window.addEventListener("load", function () {
+    // AOS적용
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 800, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out', // 애니메이션 효과
+        offset: 100, // 스크롤 시작 위치에서 얼마나 떨어진 곳에서 애니메이션 시작할지 (밀리초)
+        delay: 200,
+        opacity: 0,
+        once: true // 한 번만 애니메이션을 재생할지 여부
+        
+      });
+    });
+    // ==================================
   // design
   //   const designSwiper = new Swiper("클래스명", {옵션})
   const designSwiper = new Swiper(".designswiper", {
@@ -35,7 +48,7 @@ window.addEventListener("load", function () {
   // highlighttxth3.addEventListener("click", function () {
   //   highlighttxtp.style.display = "block";
   // });
-  var hgaSubtitle = document.querySelectorAll('.hga-subtitle');
+  var hgaSubtitle = document.querySelectorAll('.performance-subtitle');
   hgaSubtitle.forEach(hgaSubtitle => {
     hgaSubtitle.addEventListener("click", function () {
       var contents = hgaSubtitle.nextElementSibling;

@@ -1,90 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PBGCP3DX');</script>
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBGCP3DX');</script>
   <!-- End Google Tag Manager -->
-    
+
   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta name="description" content="현대VENUE 웹사이트입니다." />
-    <meta name="keywords" content="현대VENUE, VENUE, 베뉴" />
-    <meta name="author" content="현대VENUE" />
-    <meta property="og:title" content="현대VENUE" />
-    <meta property="og:site_name" content="현대VENUE 웹사이트" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
-    />
-    <meta property="og:description" content="현대VENUE 웹사이트입니다." />
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/font.css" />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- 스와이퍼 js -->
-    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
-    <script src="js/swiper/swiper.min.js"></script>
-    <!-- 파비콘 적용 -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="현대VENUE 웹사이트입니다." />
+  <meta name="keywords" content="현대VENUE, VENUE, 베뉴" />
+  <meta name="author" content="현대VENUE" />
+  <meta property="og:title" content="현대VENUE" />
+  <meta property="og:site_name" content="현대VENUE 웹사이트" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/" />
+  <meta property="og:description" content="현대VENUE 웹사이트입니다." />
+   <!-- AOS 라이브러리를 CDN을 통해 연결 -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- 스와이퍼 js -->
+  <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+  <script src="js/swiper/swiper.min.js"></script>
+  <!-- 파비콘 적용 -->
 
-    <title>세상 즐거움 속에 혼라이프 VENUE</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/kwak.js"></script>
-    <script src="js/woo.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/site.webmanifest" />
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBGCP3DX"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <title>세상 즐거움 속에 혼라이프 VENUE</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/font.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/kwak.js"></script>
+  <script src="js/woo.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBGCP3DX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    
+
   <div class="wrap">
     <!-- modal -->
     <div class="modal">
@@ -95,26 +69,20 @@
               <li><a href="#"><img src="images/구매혜택.png" alt="혜택"> 구매혜택</a></li>
               <li><a href="#"><img src="images/이벤트.png" alt="이벤트"> 이벤트</a></li>
             </ul>
-          </div>
           <div class="modal-top">
             <img src="images/top_btn.svg" alt="top">
-            </div>
+            </div>  
+</div>
       <!-- header -->
       <header class="header clearfix">
         <div class="inner">
           <div class="header-logo">
             <a href="#"><img src="images/베뉴 로고.png" alt="베뉴" /></a>
           </div>
-          <div class="header-menu">
-            <ul class="header-menu-box">
-              <li><a href="#">특징</a></li>
-              <li><a href="#">제원</a></li>
-              <li><a href="#">모델 비교</a></li>
-              <li><a href="#">가격</a></li>
-              <li><a href="#">갤러리</a></li>
-            </ul>
+          <div class="swiper-slide">
+            <img src="images/visual03.jpg" alt="드라이브" />
+            <span class="visual-font">다양한 도로환경에도<br />안전한 <em>VENUE</em></span>
           </div>
-          
         </div>
       </header>
       <!-- visual -->
@@ -169,351 +137,518 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- design -->
-      <section class="design clearfix">
-        <div class="inner">
-          <div class="design-wrap">
-            <div class="design-left">
-              <div class="title-txt">
-                <p>VENUE만의 특별한 디자인을 확인 해보세요</p>
-              </div>
-              <div class="title-subtxt">
-                <p>
-                  아이코닉한 스타일로 개성 있고 세련된 젊은 감성의
-                  라이프스타일을 구현하였습니다.
-                </p>
-              </div>
-              <img src="images/design01.png" alt="" />
+    </section>
+    <!-- design -->
+    <section class="design clearfix">
+      <div class="inner">
+        <div class="design-wrap">
+          <div class="design-left">
+            <div class="title-txt"  >
+              <p >VENUE만의 특별한 디자인을 확인 해보세요</p>
             </div>
-            <div class="design-right">
-              <!-- desgin 슬라이드 -->
-              <div class="design-slide">
-                <div class="swiper designswiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div><img src="images/design02.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl1-1"></button>
-                      <button class="imgcloseup cl1-2"></button>
-                      <button class="imgcloseup cl1-3"></button>
+            <div class="title-subtxt">
+              <p>
+                아이코닉한 스타일로 개성 있고 세련된 젊은 감성의
+                라이프스타일을 구현하였습니다.
+              </p>
+            </div>
+            <img src="images/design01.png" alt="" />
+          </div>
+          <div class="design-right">
+            <!-- desgin 슬라이드 -->
+            <div class="design-slide">
+              <div class="swiper designswiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div><img src="images/design02.jpg" alt="#" /></div>
+                    <span class="imgcloseup cl1-1"></span>
+                    <span class="imgcloseup cl1-2"></span>
+                    <span class="imgcloseup cl1-3"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <div><img src="images/design03.jpg" alt="#" /></div>
+                    <span class="imgcloseup cl2-1"></span>
+                    <span class="imgcloseup cl2-2"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <div><img src="images/design04.jpg" alt="#" /></div>
+                    <span class="imgcloseup cl3-1"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// desgin 슬라이드 -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- space -->
+    <section class="space clearfix">
+      <div class="inner">
+        <div class="space-title">
+          <h1>미래 지향적이고 하이테크한 이미지를 살린 실내공간</h1>
+        </div>
+        <div class="space-image-container">
+          <img src="images/space01.jpg" alt="이미지 1" id="image1" />
+          <img class="space02" src="images/space02.jpg" alt="이미지 2" id="image2" />
+        </div>
+        <button id="button1">Overview</button>
+        <button id="button2">Space</button>
+      </div>
+    </section>
+    <!-- flux -->
+    <section class="flux clearfix">
+      <div class="inner">
+        <div class="flux-title">
+          <h1>VENUE FLUX 전용 스페셜 디자인</h1>
+        </div>
+        <div class="more"><span>MORE &rang;</span></div>
+        <div class="flux-imgbox-container">
+          <div class="imgbox">
+            <a href="#">
+              <img src="images/flux01.jpg" alt="플럭스1" />
+            </a>
+            <span class="flux-name">핫스템 라디에이터 그릴</span>
+          </div>
+          <div class="imgbox">
+            <a href="#">
+              <img src="images/flux02.jpg" alt="플럭스2" />
+            </a>
+            <span class="flux-name">C필러 뱃지</span>
+          </div>
+          <div class="imgbox">
+            <a href="#">
+              <img src="images/flux03.jpg" alt="플럭스3" />
+            </a>
+            <span class="flux-name">리어스키드</span>
+          </div>
+        </div>
+        <p class="flux-advice">
+          * 상기 이미지는 그레이(인조가죽 시트) 인테리어 선택 시 라임 컬러
+          포인트 적용 예시입니다.<br />
+          (블랙 내장, 메테오 블루 내장 적용 시 각각 화이트, 라이트 실버 컬러
+          포인트 적용)
+        </p>
+      </div>
+    </section>
+    <!-- highlight -->
+    <section class="highlight clearfix">
+      <div class="inner">
+        <div class="highlight-title">
+          <h2>Highlight</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="highlight-slide">
+          <div class="swiper highlightswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="highlight-item">
+                  <h3>Performance</h3>
+                  <div class="highlight-content">
+                    <div class="highlight-subtitle">
+                      <img src="images/highlight_performance02.jpg" />
                     </div>
-                    <div class="swiper-slide">
-                      <div><img src="images/design03.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl2-1"></button>
-                      <button class="imgcloseup cl2-2"></button>
-                    </div>
-                    <div class="swiper-slide">
-                      <div><img src="images/design04.jpg" alt="#" /></div>
-                      <button class="imgcloseup cl3-1"></button>
+                    <div class="highlight-txt">
+
+                      <div class="highlight-tab-memu">
+                        <a href="#" class="performance-subtitle">
+                          <h4>드라이브 모드 / 험로 주행 모드</h4>
+                        </a>
+                        <a href="#;" class="performance-subtitle">
+                          <h4>가솔린 1.6 엔진</h4>
+                        </a>
+                      </div>
+
+                      <div class="highlight-tab-memu">
+                        <p class="performance-p">
+                          플로어 콘솔 내 트랙션 모드 조그 다이얼을 눌러 드라이브 모드 또는
+                          2WD 험로 주행 모드로 설정한 후, 다이얼을 좌/우로 회전 조작하여
+                          세부 모드를 선택합니다. 모드 선택에 따라 엔진·제동을 제어하여
+                          어떠한 노면 조건에서도 최적의 구동 성능을 발휘합니다.<br />
+                          <br />
+                          <br />
+                          <br />
+                          * 드라이브 모드 - SPORT, ECO, NORMAL* 2WD 험로 주행 모드 - SNOW,
+                          MUD, SAND
+                        </p>
+                        <p class="performance-p">
+                          스마트스트림 가솔린 1.6 엔진<br>
+                          최고출력 123PS/6,300rpm<br>
+                          최대토크 15.7kgfㆍm/4,500rpm<br>
+                          복합연비 13.7km/l<br>
+                          (IVT, 15인치 타이어 기준)
+                        </p>
+
+                      </div>
+
+
+                      <ul>
+                        <li>
+                          <a href="#" class="performance-subtitle">
+                            <h4>드라이브 모드 / 험로 주행 모드</h4>
+                          </a>
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                플로어 콘솔 내 트랙션 모드 조그 다이얼을 눌러 드라이브 모드 또는
+                                2WD 험로 주행 모드로 설정한 후, 다이얼을 좌/우로 회전 조작하여
+                                세부 모드를 선택합니다. 모드 선택에 따라 엔진·제동을 제어하여
+                                어떠한 노면 조건에서도 최적의 구동 성능을 발휘합니다.<br />
+                                <br />
+                                <br />
+                                <br />
+                                * 드라이브 모드 - SPORT, ECO, NORMAL* 2WD 험로 주행 모드 - SNOW,
+                                MUD, SAND
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#;" class="performance-subtitle">
+                            <h4>가솔린 1.6 엔진</h4>
+                          </a>
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                스마트스트림 가솔린 1.6 엔진<br>
+                                최고출력 123PS/6,300rpm<br>
+                                최대토크 15.7kgfㆍm/4,500rpm<br>
+                                복합연비 13.7km/l<br>
+                                (IVT, 15인치 타이어 기준)
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--// desgin 슬라이드 -->
+
+              <div class="swiper-slide">
+                <div class="highlight-item">
+                  <h3>Safety</h3>
+                  <div class="highlight-content">
+                    <div class="highlight-subtitle">
+                      <img src="images/highlight_safety01.jpg" />
+                    </div>
+
+                    <div class="highlight-txt">
+
+                      <div class="highlight-tab-memu">
+                        <a href="#" class="safety-subtitle">
+                          <h4>후방 모니터</h4>
+                        </a>
+                      </div>
+
+                      <div class="highlight-tab-memu">
+                        <p class="performance-p">
+                          안전한 주차를 위해 차량 뒤쪽 상황을 영상으로 보여줍니다.
+                        </p>
+
+                      </div>
+
+                      <ul>
+                        <li>
+                          <a href="#" class="safety-subtitle">
+                            <h4>후방 모니터</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                안전한 주차를 위해 차량 뒤쪽 상황을 영상으로 보여줍니다.
+                              </p>
+                            </li>
+                          </ul>
+
+                        </li>
+                      </ul>
+                      <button class="safety-bt">Hyundai SmartSense</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="highlight-item">
+                  <h3>H Genuine Accessories</h3>
+                  <div class="highlight-content">
+                    <div class="highlight-subtitle">
+                      <img src="images/highlight_HGA01.jpg" />
+                    </div>
+                    <div class="highlight-txt">
+                      <ul>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>적외선 무릎 워머</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                슈라우드 로어 커버(스티어링 컬럼 하단)에 설치된 복사 열선이 운전자의 허벅지와 무릎에 복사열을 전달하여 저온에서 히터 바람 없이도 냉감을 줄여 보다 쾌적한
+                                환경을
+                                제공합니다.
+                                <br>
+                                <br>
+                                <br>
+                                ※ 주요 스펙
+                                - 적외선 무릎 워머 사용 시 무릎 부위 온열감 2분 30초 내로 전달 (0℃, 워머와 무릎간 거리 60mm 기준)
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>플로어/러기지 매트</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                - 3D 형상으로 오염물질이 차량 실내에 유입되지 않도록 방지 기능이 탁월한 매트 상품입니다.<br>
+                                - 차량에 딱 맞는 완벽한 일체감과 매트 오염 시 세척/건조가 탁월한 매트 상품입니다
+                              </p>
+                            </li>
+                            <li>
+                              <p class="performance-p">
+                                <span>[프로텍션 매트 패키지]</span><br>
+                                - 구성품목 : 플로어 매트(1/2열), 러기지 매트
+                              </p>
+                            </li>
+                          </ul>
+
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>17인치 블랙 알로이 휠</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                베뉴 전용 17인치 디자인 알로이 휠로 유광 블랙의 유니크한 디자인이 적용된 상품입니다.
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>프리미엄 스피커(케블라콘)</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                케블라 재질이 적용된 콘을 사용하여 보다 향상된 사운드감을 제공해 주는 프리미엄 스피커 상품입니다.
+                              </p>
+                            </li>
+                          </ul>
+
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>C to USB-A 변환 젠더</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                차량 전용 USB젠더로, 차량의 USB단자에 최적화 개발되었습니다.
+                                데이터 송수신 및 충전이 가능합니다.<br>
+                                ※ 현대차 전용 개발 제품으로 타 제품 및 타 자동차 브랜드에서는 작동을 보장하지 않습니다.
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>A to USB-C 변환 젠더</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                차량 전용 USB젠더로, 차량의 USB단자에 최적화 개발되었습니다.
+                                데이터 송수신 및 충전이 가능합니다.
+                                ※ 현대차 전용 개발 제품으로 타 제품 및 타 자동차 브랜드에서는 작동을 보장하지 않습니다.
+                              </p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="hga-subtitle">
+                            <h4>아웃사이드 미러 커버(메탈실버)</h4>
+                          </a>
+
+                          <ul>
+                            <li>
+                              <p class="performance-p">
+                                베뉴 전용 아웃사이드 미러 커버를 통해 기본차와 디자인 차별화를 해주는 상품입니다.
+                              </p>
+                            </li>
+                          </ul>
+
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
-      </section>
-      <!-- space -->
-      <section class="space clearfix">
-        <div class="inner">
-          <div class="space-title">
-            <h1>미래 지향적이고 하이테크한 이미지를 살린 실내공간</h1>
-          </div>
-          <div class="space-image-container">
-            <img src="images/space01.jpg" alt="이미지 1" id="image1" />
-            <img
-              class="space02"
-              src="images/space02.jpg"
-              alt="이미지 2"
-              id="image2"
-            />
-          </div>
-          <button id="button1">Overview</button>
-          <button id="button2">Space</button>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- gallery -->
+    <section class="gallery clearfix">
+      <div class="inner">
+        <h1 class="galley-title">gallery</h1>
+        <div class="galley-more">
+          <span>더보기 <i class="fa-solid fa-chevron-right"></i></span>
         </div>
-      </section>
-      <!-- flux -->
-      <section class="flux clearfix">
-        <div class="inner">
-          <div class="flux-title">
-            <h1>VENUE FLUX 전용 스페셜 디자인</h1>
+        <div class="galley_inner">
+          <div class="gallery-box gallery-box1">
+            <img src="images/gallery01.jpg" alt="갤러리1">
+            <img src="images/gallery02.png" alt="갤러리2">
+
           </div>
-          <div class="more"><span>MORE &rang;</span></div>
-          <div class="flux-imgbox-container">
-            <div class="imgbox ">
-              <a href="#">
-                <img src="images/flux01.jpg"/>
-                <span class="flux-name ">핫스템 라디에이터 그릴</span>
-              </a>
-            </div>
-            <div class="imgbox ">
-              <a href="#">
-                <img src="images/flux02.jpg"/>
-                <span class="flux-name ">C필러 뱃지</span>
-              </a>
-            </div>
-            <div class="imgbox ">
-              <a href="#">
-                <img src="images/flux03.jpg"/>
-                <span class="flux-name ">리어스키드</span>
-              </a>
-            </div>
+          <div class="gallery-box gallery-box2">
+            <img src="images/gallery03.jpg" alt="갤러리3">
           </div>
-          <p class="flux-advice">
-            * 상기 이미지는 그레이(인조가죽 시트) 인테리어 선택 시 라임 컬러
-            포인트 적용 예시입니다.<br />
-            (블랙 내장, 메테오 블루 내장 적용 시 각각 화이트, 라이트 실버 컬러
-            포인트 적용)
-          </p>
-        </div>
-      </section>
-      <!-- highlight -->
-      <section class="highlight clearfix">
-        <div class="inner">
-          <div class="highlight-title">
-            <h1>Highlight</h1>
-          </div>
-              <!-- Swiper -->
-    <div class="swiper highlightswiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <h1>Performance</h1>
-          <div class="highlight-subtitle">
-            <img src="images/highlight_performance02.jpg" />
-          </div>
-          <div class="highlight-txt">
-            <ul>
-              <li>
-                <a href="javascript:;" class="performance-subtitle"><h3>드라이브 모드 / 험로 주행 모드</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      플로어 콘솔 내 트랙션 모드 조그 다이얼을 눌러 드라이브 모드 또는
-                      2WD 험로 주행 모드로 설정한 후, 다이얼을 좌/우로 회전 조작하여
-                      세부 모드를 선택합니다. 모드 선택에 따라 엔진·제동을 제어하여
-                      어떠한 노면 조건에서도 최적의 구동 성능을 발휘합니다.<br />
-                      <br />
-                      <br />
-                      <br />
-                      * 드라이브 모드 - SPORT, ECO, NORMAL* 2WD 험로 주행 모드 - SNOW,
-                      MUD, SAND
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="performance-subtitle"><h3>가솔린 1.6 엔진</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      스마트스트림 가솔린 1.6 엔진<br>
-                      최고출력 123PS/6,300rpm<br>
-                      최대토크 15.7kgfㆍm/4,500rpm<br>
-                      복합연비 13.7km/l<br>
-                      (IVT, 15인치 타이어 기준)
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <h1>Safety</h1>
-          <div class="highlight-subtitle">
-            <img src="images/highlight_safety01.jpg" />
-          </div>
-          <div class="highlight-txt">
-            <li>
-              <a href="javascript:;" class="safety-subtitle"><h3>후방 모니터</h3></a>
-              <ul>
-                <li>
-                  <p class="performance-p">
-                    안전한 주차를 위해 차량 뒤쪽 상황을 영상으로 보여줍니다.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <button class="safety-bt">Hyundai SmartSense</button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <h1>H Genuine Accessories</h1>
-          <div class="highlight-subtitle">
-            <img src="images/highlight_HGA01.jpg" />
-          </div>
-          <div class="highlight-txt">
-            <ul>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>적외선 무릎 워머</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      슈라우드 로어 커버(스티어링 컬럼 하단)에 설치된 복사 열선이 운전자의 허벅지와 무릎에 복사열을 전달하여 저온에서 히터 바람 없이도 냉감을 줄여 보다 쾌적한 환경을 제공합니다.
-                      <br>
-                      <br>
-                      <br>
-                      ※ 주요 스펙
-                      - 적외선 무릎 워머 사용 시 무릎 부위 온열감 2분 30초 내로 전달 (0℃, 워머와 무릎간 거리 60mm 기준)
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>플로어/러기지 매트</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      - 3D 형상으로 오염물질이 차량 실내에 유입되지 않도록 방지 기능이 탁월한 매트 상품입니다.<br>
-                      - 차량에 딱 맞는 완벽한 일체감과 매트 오염 시 세척/건조가 탁월한 매트 상품입니다
-                    </p>
-                  </li>
-                  <li>
-                    <p class="performance-p">
-                      <span>[프로텍션 매트 패키지]</span><br>
-      - 구성품목 : 플로어 매트(1/2열), 러기지 매트
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>17인치 블랙 알로이 휠</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      베뉴 전용 17인치 디자인 알로이 휠로 유광 블랙의 유니크한 디자인이 적용된 상품입니다.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>프리미엄 스피커(케블라콘)</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      케블라 재질이 적용된 콘을 사용하여 보다 향상된 사운드감을 제공해 주는 프리미엄 스피커 상품입니다.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>C to USB-A 변환 젠더</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      차량 전용 USB젠더로, 차량의 USB단자에 최적화 개발되었습니다.
-      데이터 송수신 및 충전이 가능합니다.<br>
-      ※ 현대차 전용 개발 제품으로 타 제품 및 타 자동차 브랜드에서는 작동을 보장하지 않습니다.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>A to USB-C 변환 젠더</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      차량 전용 USB젠더로, 차량의 USB단자에 최적화 개발되었습니다.
-                      데이터 송수신 및 충전이 가능합니다.
-                      ※ 현대차 전용 개발 제품으로 타 제품 및 타 자동차 브랜드에서는 작동을 보장하지 않습니다.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:;" class="hga-subtitle"><h3>아웃사이드 미러 커버(메탈실버)</h3></a>
-                <ul>
-                  <li>
-                    <p class="performance-p">
-                      베뉴 전용 아웃사이드 미러 커버를 통해 기본차와 디자인 차별화를 해주는 상품입니다.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <div class="gallery-box gallery-box3">
+            <img src="images/gallery04.jpg" alt="갤러리4">
+            <img src="images/gallery05.jpg" alt="갤러리5">
           </div>
         </div>
       </div>
-    </div>
-    <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <!-- gallery -->
-      <section class="gallery clearfix">
-        <div class="inner">
-          <h2 class="galley-title">gallery</h2>
-          <div class="galley_inner">
-          <div class="gallery-box1">
-            <ul>
-              <li ><a href="#"><img src="images/gallery01.jpg" alt="갤러리1"></a></li>
-              <li ><a href="#"><img src="images/gallery02.png" alt="갤러리2"></a></li>
-            </ul>
+    </section>
+    <!-- news -->
+    <section class="news clearfix">
+      <div class="inner">
+        <h1 class="news-title"><span>VENUE</span> News</h1>
+        <div class="news_inner">
+          <div class="news-more">
+            <span>더보기 <i class="fa-solid fa-chevron-right"></i></span>
           </div>
-          <div class="gallery-box2">
-            <ul>
-              <li ><a href="#"><img src="images/gallery03.jpg" alt="갤러리3"></a></li>
-            </ul>
-          </div>
-          <div class="gallery-box1">
-            <ul>
-              <li ><a href="#"><img src="images/gallery04.jpg" alt="갤러리4"></a></li>
-              <li ><a href="#"><img src="images/gallery05.jpg" alt="갤러리5"></a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </section>
-      <!-- news -->
-      <section class="news clearfix">
-        <div class="inner">
-          <h2 class="news-title"><span>VENUE</span> News</h2>
-          <div class="news_inner">
           <div id="news-list">
             <ul>
-              <li><img src="images/new1.png" alt="뉴스1"></li>
+              <li><a href="#"><img src="images/new1.png" alt="뉴스1"></a></li>
               <li>
                 <b>현대 자동차가 소형 스포츠 유틸리티차량(suv) '베뉴' 를 출시했습니다. </b>
                 <p>현대차는 이 차의 주요고객층으로 1980년대 초부터 2000년대 초에
-                  태어난 '밀레니얼 세대'를 꼽았습니다.
+                  태어난 '밀레니얼 세대'를 꼽았습니다...
                 </p>
               </li>
-            </ul>        
+            </ul>
           </div>
           <div id="news-list">
             <ul>
-              <li><img src="images/new2.jpg" alt="뉴스2"></li>
+              <li><a href="#"><img src="images/new2.jpg" alt="뉴스2"></a></li>
               <li>
                 <b>현대 자동차가 '베뉴'가 올해의차에 선정 </b>
                 <p>현대차는 인도 법인은 베뉴가 현지에서 최고의 권위를 자랑하는
-                  '인도 올해의차(india Car of the Year 2020)'로 선정됐다고 밝혔다.
+                  '인도 올해의차(india Car of the Year 2020)'로 선정됐다고 밝혔다......
                 </p>
               </li>
-            </ul>        
-          </div> 
+            </ul>
+          </div>
           <div id="news-list">
             <ul>
-              <li><img src="images/new3.jpg" alt="뉴스3"></li>
+              <li><a href="#"><img src="images/new3.jpg" alt="뉴스3"></a></li>
               <li>
                 <b>운전면허 학원 차량의 세대교체진행중 </b>
                 <p>운전면허학원과 면허시험장에서 운행되는차량이
                   현대자동차의 경형suv'베뉴'로 세대교체되고있다.
-                  자동차 시장에서 불고있는 suv열품이 운전면허 시장으로 이어지는 모양이다.
+                  자동차 시장에서 불고있는 suv열품이 운전면허 시장으로 이어지는 모양이다......
                 </p>
               </li>
-            </ul>        
+            </ul>
           </div>
         </div>
       </section>
-      <!-- review -->
-      <section class="review clearfix">
-        <div class="inner"></div>
-      </section>
-      <!-- event -->
-      <section class="event clearfix">
-        <div class="inner"></div>
-      </section>
+<!-- review -->
+<section class="review clearfix">
+  <div class="inner">
+    <div class="review-title">
+      <h1>구매후기</h1>
+      <p>고객님이 남긴 생생한 후기를 확인해보세요.</p>
+    </div>
+    <div class="review-more">
+      <span>구매 후기 더보기 <i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <div class="review-inner">
+      <div class="review-box">
+        <a href="#"><img src="images/review01.jpg" alt="리뷰1"></a>
+        <span></span>
+        <ul>
+          <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </li>
+        </ul>
+        <p>첫차 구매라 모르는 점이 많았는데 계약부터 출고까지
+          늘 한결같이 친절하게 응대 해주셔서 감사했습니다.
+          덕분에 문제없이 인수받은거 같습니다.
+        </p>
+        <p>2023-08-01 김*철</p>
+      </div>
+      <div class="review-box">
+        <a href="#"><img src="images/review02.jpg" alt="리뷰2"></a>
+        <span></span>
+        <ul>
+          <li>구매 모델: 베뉴 가솔린 1.6 FLUX 2WD IVT</li>
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </li>
+        </ul>
+        <p>사정이 생겨 차량을 빨리 구입해야 하는 상황이었는데 계약부터 빠른 출고까지 꼼꼼하게 챙겨 주시고 중간중간 진행상황에 대해서 연락을 주시는등 계약부터 출고까지 일사천리로 처리해주신 부장님
+          감사합니다^^
+        </p>
+        <p>2023-08-10 김*우</p>
+      </div>
+      <div class="review-box">
+        <a href="#"><img src="images/review03.jpg" alt="리뷰3"></a>
+        <span></span>
+        <ul>
+          <li>구매 모델: 베뉴 가솔린 1.6 PREMIUM 2WD IVT</li>
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </li>
+        </ul>
+        <p>한마디로 베뉴 너무너무 맘에 듭니다. 경차운전했는데 베뉴는 승차감이 최고입니다. 차가 조용하고 안전사양도 잘되어 있어 1년기다린 보람이 있습니다. 여성분들이 운전하기 딱좋은차입니다. 베뉴
+          카페에 가입해서 좋은정보도 많이 얻었고 자동차 썬팅 블랙박스해주신 현대담당자님 감사합니다.베뉴출고될때까지 신경 써주셔서 고맙습니다. 베뉴 사랑합니다~♡♡♡
+        </p>
+        <p>2023-08-15 곽*민</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- event -->
+<section class="event clearfix">
+  <div class="inner">
+    <div class="event-inner">
+      <img src="images/event1.png" alt="이벤트1">
+      <img src="images/event2.png" alt="이벤트2">
+    </div>
+  </div>
+</section>
       <!-- footer -->
       <footer class="footer clearfix">
         <div class="inner">
