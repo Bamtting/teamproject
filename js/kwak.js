@@ -17,7 +17,28 @@ window.addEventListener("load", function () {
       disableOnInteraction: true, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
     },
   });
-  // 비주얼 버튼 색상 변경
+  // 스크롤 시 상단으로 이동
+  $(function () {
+    // 보이기 | 숨기기
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 250) {
+        //250 넘으면 버튼이 보여짐니다.
+        $(".modal-top").fadeIn();
+        $(".modal-top").css("left", $("#sidebar").offset().left); // #sidebar left:0 죄표
+      } else {
+        $(".modal-top").fadeOut();
+      }
+    });
+    // 버튼 클릭시
+    $(".modal-top").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0, // 0 까지 animation 이동합니다.
+        },
+        400
+      ); // 속도 400 return false;
+    });
+  });
 
   // 스와이프 제어 버튼
   $(".fa-play").on("click", function () {
