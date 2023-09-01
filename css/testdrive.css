@@ -1,0 +1,63 @@
+/* testdrive.css */
+.wrap {
+  width: 100%;
+}
+.td-inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.td-header {
+  width: 100%;
+  height: 54px;
+  margin-top: 80px;
+  margin-bottom: 4px;
+}
+.td-header-left {
+  width: 50%;
+  float: left;
+}
+.td-header-left h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.td-header-right {
+  width: 50%;
+  float: left;
+}
+.td-header-right img {
+  width: 98px;
+  float: right;
+}
+.select-area {
+  width: 100%;
+  margin-top: 35px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000;
+}
+.select-area h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.input-box {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 32px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.input-box input {
+  vertical-align: middle;
+  accent-color: #505050;
+}
+.testType1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.testType2 {
+  width: 24px;
+  height: 24px;
+  margin-left: 13px;
+  margin-right: 5px;
+}
