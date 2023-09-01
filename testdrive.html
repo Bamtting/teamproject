@@ -82,9 +82,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/kwak.js"></script>
-    <script src="js/woo.js"></script>
-    <script src="js/nunu.js"></script>
+    <script src="js/s_testcar.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -120,8 +119,24 @@
         <div class="select-area">
           <h2>모델 선택</h2>
         </div>
-        <div class="model-selecting">
-            
+        <select id="carValue" name="carValue">
+          <option value="default">차량을 선택해주세요.</option>
+          <option class="Venue" value="Venue">Venue</option>
+        </select>
+
+        <div id="carImage">
+          <!-- 이미지가 나타날 곳 -->
+        </div>
+        <div class="select-area">
+          <h2>지역 선택</h2>
+        </div>
+        <div class="testdrive-area">
+          <div class="select-box">
+            <section name="selcity">
+              <option value="0">전체</option>
+            </section>
+          </div>
+          <div class="select-box"></div>
         </div>
       </div>
     </div>
