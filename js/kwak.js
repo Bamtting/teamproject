@@ -10,23 +10,21 @@ window.addEventListener("load", function () {
     },
 
     autoplay: {
-      // 자동 슬라이드 설정 , 비 활성화 시 false
+      delay: 2500,
 
-      delay: 1000, // 시간 설정
-
-      disableOnInteraction: true, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+      disableOnInteraction: true,
     },
   });
   // 스크롤 시 상단으로 이동
   $(function () {
     // 보이기 | 숨기기
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 250) {
-        //250 넘으면 버튼이 보여짐니다.
+      if ($(this).scrollTop() > 1000) {
         $(".modal-top").fadeIn();
-        $(".modal-top").css("left", $("#sidebar").offset().left); // #sidebar left:0 죄표
+        $(".modal").fadeIn();
       } else {
         $(".modal-top").fadeOut();
+        $(".modal").fadeOut();
       }
     });
     // 버튼 클릭시
