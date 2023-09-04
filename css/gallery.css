@@ -6,6 +6,7 @@
 
 .galley-title {
   font-size: 48px;
+  font-weight: 700;
   text-transform: uppercase;
   display: block;
   position: relative;
@@ -99,5 +100,8 @@
   .gallery-box1 img:first-child,
   .gallery-box3 img:first-child {
     margin-bottom: 2.5%;
+  }
+  .galley-title{
+    font-size: 40px;
   }
 }
