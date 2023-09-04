@@ -22,12 +22,6 @@
   overflow: hidden;
   height: 1080px;
 }
-
-.flux-title {
-  width: 100%;
-  margin: 0 auto;
-  height: 60px;
-}
 .flux-title h1 {
   text-align: center;
   font-size: 48px;
@@ -60,19 +54,9 @@
   top: 30%;
   cursor: pointer;
 }
-.flux-imgbox-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: antiquewhite;
-  height: 620px;
-  padding: 200px 40px;
-  margin: 100px 10px;
-}
 .imgbox {
-  width: 330px;
-  height: 300px;
+  width: 150px;
+  height: 130px;
 }
 .imgbox img {
   width: 100%;
@@ -117,10 +101,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   height: 620px;
-  padding: 200px 40px;
-  margin: 100px 10px;
+  padding: 200px 25px;
+  margin: 100px 5px;
 }
 .imgbox {
   /* display: flex;
@@ -156,6 +140,80 @@
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.4;
-  letter-spacing: 0.44px;
+  /* letter-spacing: 0.44px; */
   color: #2c2c2c;
+}
+/* ============================== */
+@media screen and (max-width:1024px){
+  .flux-title{
+    width: 80%;
+  }
+  .flux-title h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+  .flux .flux-imgbox-container{
+    widows: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    gap: 3%;
+  }
+  .more{
+    position: absolute;
+    top: 90%;
+    left: 47%;
+  }
+  .flux-name{
+    display: none;
+  }
+  .flux .flux-advice{
+    margin-top: 15%;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media screen and (max-width:768px) {
+  .flux-title{
+    width: 70%;
+  }
+  .flux-title h1{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  .flux .flux-imgbox-container{
+    widows: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    gap: 3%;
+  }
+  .more{
+    position: absolute;
+    top: 108%;
+    left: 47%;
+  }
+  .flux-name{
+    display: none;
+  }
+  .flux .flux-advice{
+    margin-top: 15%;
+    font-size: 0.8em;
+    text-align: center;
+  }
 }
