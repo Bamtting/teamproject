@@ -5,22 +5,18 @@
   display: block;
   overflow: hidden;
   width: 100%;
-  height: 1080px;
 }
 .highlight-title {
   width: 100%;
-  height: 60px;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
-  margin: 40px auto;
+  margin: 40px 0;
 }
 .highlight-slide {
   position: relative;
   width: 100%;
-  height: 700px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 /* Swiper  */
@@ -31,33 +27,33 @@
 
 .swiper-button-prev {
   position: absolute;
-  top: 55%;
-  left: 0%;
+  top: 50%;
+  left: 6%;
   transform: translate(-25%, -50%);
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 28px;
   color: #fff;
   opacity: 0.8;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 55%;
-  right: 0%;
+  top: 50%;
+  right: 6%;
   transform: translate(25%, -50%);
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .swiper-button-next::after {
-  font-size: 20px;
+  font-size: 28px;
   color: #fff;
   opacity: 0.8;
 }
@@ -65,83 +61,70 @@
 /* ========== highlight-item ========== */
 .highlight-item {
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
   font-size: 18px;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.highlight-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .highlight-item h3 {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 28px;
   font-weight: 700;
-  z-index: 1;
 }
 .highlight-content {
   position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
+  padding: 0 50px;
+  /* background-color: rgba(131, 66, 66, 0.3); */
 }
-
 .highlight-subtitle {
-  /* float: left; */
   position: relative;
   display: block;
-  width: 500px;
-  height: 700px;
+  margin-bottom: 20px;
 }
 .highlight-subtitle img {
-  height: 600px;
-  width: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+.highlight-txt {
+  width: 100%;
+  padding: 40px;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  display: flex;
+  position: relative;
 }
 
-.highlight-txt h4 {
+.highlight-tab-memu {
   position: relative;
-  margin-top: 35%;
+}
+.highlight-tab-memu a {
+  position: relative;
+}
+.highlight-tab-memu a h4 {
+  position: relative;
   text-align: left;
-  margin-left: 3%;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   color: #000;
 }
-
-.highlight-txt {
-  /* float: right; */
-  width: 40%;
-  height: 600px;
-  margin-left: 1%;
-  margin-right: 1%;
-  border: 0;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.3);
+.highlight-tab-content {
+  position: relative;
+  width: 50%;
 }
-
-.highlight-txt ul li ul {
-  display: none;
-}
-.highlight-txt p {
-  margin-top: 20%;
+.highlight-tab-content p {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-left: 15%;
   text-align: left;
-  margin-left: 3%;
+  width: 100%;
   font-size: 14px;
-  font-weight: 400;
-  color: #fff;
+  font-weight: 500;
+  color: #222;
+  display: none;
+  line-height: 1.3em;
 }
 .safety-bt {
   width: 220px;
@@ -153,8 +136,8 @@
   background-color: #0a62d0;
   border-radius: 10px;
   position: absolute;
-  right: 55px;
-  bottom: 20%;
+  right: 10%;
+  bottom: 18%;
 }
 /* =============================== */
 /* .performance-subtitle + ul {
@@ -163,3 +146,43 @@
 .performance-subtitle.active + ul {
   display: block;
 } */
+/* ============================== */
+/* 1024px */
+@media screen and (max-width: 1024px) {
+  .highlight-title {
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+  .highlight-item h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  .safety-bt {
+    top: 110%;
+    left: 30%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* 768px */
+@media screen and (max-width: 768px) {
+  .highlight-title {
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+  .highlight-item h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  .safety-bt {
+    display: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
