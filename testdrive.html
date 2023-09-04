@@ -97,46 +97,139 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
-      <div class="td-inner">
-        <header class="td-header">
-          <div class="td-header-left">
-            <h1>시승 및 상담신청</h1>
+    <div id="apply-form">
+      <div class="wrap">
+        <div class="td-inner">
+          <header class="td-header">
+            <div class="td-header-left">
+              <h1>시승 및 상담신청</h1>
+            </div>
+            <div class="td-header-right">
+              <img src="images/베뉴 로고.png" alt="logo" />
+            </div>
+          </header>
+          <div class="select-area">
+            <h2>신청 유형</h2>
           </div>
-          <div class="td-header-right">
-            <img src="images/베뉴 로고.png" alt="logo" />
+          <div class="input-box">
+            <input type="radio" class="testType1" value="drive" checked />
+            시승 신청
+            <input type="radio" class="testType2" value="consulting" />
+            차량 상담
           </div>
-        </header>
-        <div class="select-area">
-          <h2>신청 유형</h2>
-        </div>
-        <div class="input-box">
-          <input type="radio" class="testType1" value="drive" checked />
-          시승 신청
-          <input type="radio" class="testType2" value="consulting" />
-          차량 상담
-        </div>
-        <div class="select-area">
-          <h2>모델 선택</h2>
-        </div>
-        <select id="carValue" name="carValue">
-          <option value="default">차량을 선택해주세요.</option>
-          <option class="Venue" value="Venue">Venue</option>
-        </select>
+          <div class="select-area">
+            <h2>모델 선택</h2>
+          </div>
+          <select id="carValue" name="carValue">
+            <option value="default">차량을 선택해주세요.</option>
+            <option class="Venue" value="Venue">Venue</option>
+          </select>
 
-        <div id="carImage">
-          <!-- 이미지가 나타날 곳 -->
-        </div>
-        <div class="select-area">
-          <h2>지역 선택</h2>
-        </div>
-        <div class="testdrive-area">
-          <div class="select-box">
-            <section name="selcity">
-              <option value="0">전체</option>
-            </section>
+          <div id="carImage">
+            <!-- 이미지가 나타날 곳 -->
           </div>
-          <div class="select-box"></div>
+          <div class="select-area">
+            <h2>지역 선택</h2>
+          </div>
+          <div class="testdrive-area">
+            <div class="select-box">
+              <select id="selcity" name="selcity">
+                <!-- JavaScript로 옵션 추가될 자리 -->
+              </select>
+            </div>
+            <div class="select-box">
+              <select id="dealer" name="dealer">
+                <!-- JavaScript로 옵션 추가될 자리 -->
+              </select>
+            </div>
+          </div>
+
+          <div class="select-area">
+            <h2>개인정보 입력</h2>
+          </div>
+          <div class="information-area">
+            <p class="text-area">
+              *실제 상담 받으실 고객님의 정보를 입력해주세요. 자세한 상담을 위해
+              담당 딜러가 입력한 휴대전화번호로 연락 드립니다.
+            </p>
+          </div>
+          <div class="info-form">
+            <label for="name" class="name">이름*</label>
+            <input
+              type="text"
+              class="info-name"
+              placeholder="이름을 입력해주세요"
+            />
+            <div class="info-row">
+              <div class="col">
+                <div class="input-wrap">
+                  <label for="phone" class="phone">휴대전화번호*</label>
+                  <input
+                    type="text"
+                    class="info-phone"
+                    placeholder="'-'를 제외하고 입력해주세요"
+                  />
+                </div>
+                <button class="info-btn" type="button">인증번호 받기</button>
+              </div>
+              <div class="col">
+                <div class="input-wrap">
+                  <label for="code" class="code">인증번호*</label>
+                  <input
+                    type="text"
+                    class="info-code"
+                    placeholder="인증번호를 입력해주세요."
+                  />
+                </div>
+                <button class="info-code-btn">확인</button>
+              </div>
+            </div>
+          </div>
+          <div class="select-area">
+            <h2>개인정보 제공 동의</h2>
+          </div>
+          <div class="Consent-area">
+            <p class="text-area">
+              현대 자동차는 VENUE 차량 예약 서비스 제공을 위해 <개인정보 보호법>
+              등 관련 법률에 따라 아래와 같이 개인정보를 수집, 이용, 제공하고자
+              합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기
+              바랍니다.
+            </p>
+            <div class="agree-top">
+              * 귀하는 아래 동의 내용을 확인한 후 개별 동의를 하실 수도
+              있습니다. 아래의 동의 항목 중에는 선택 동의 사항이 포함되어
+              있습니다
+              <div class="form-box">
+                <input type="checkbox" class="agree-all" name="agree-all" />
+                <label for="agree-all">전체동의</label>
+              </div>
+            </div>
+            <ul class="agree-list">
+              <li>
+                <dl>
+                  <dt>개인정보 수집 및 이용 동의 <strong>(필수) *</strong></dt>
+                  <dd>
+                    <div class="form-box">
+                      <input
+                        type="radio"
+                        class="agruseyny"
+                        name="agruseyny"
+                        value="Y"
+                      />
+                      <label for="agruseyny">동의함</label>
+                      <input
+                        type="radio"
+                        class="agruseynn"
+                        name="agruseynn"
+                        value="N"
+                      />
+                      <label for="agruseynn">동의안함</label>
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

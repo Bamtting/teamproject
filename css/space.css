@@ -34,17 +34,7 @@
 .space-image-container .space02 {
   display: none;
 }
-button {
-  border: 0;
-  /* background-color: rgba(0,0,0,0.6); */
-  background-color: transparent;
-  font-size: 18px;
-  font-weight: 400;
-  color: #333;
-  width: 90px;
-  margin: 0 auto;
-  cursor: pointer;
-}
+
 #button1 {
   /* padding: 10px; */
   display: inline-block;
@@ -62,6 +52,7 @@ button {
   bottom: 10%;
   right: 43%;
 }
-#button1:hover, #button2:hover {
+#button1:hover,
+#button2:hover {
   color: #999900;
 }
