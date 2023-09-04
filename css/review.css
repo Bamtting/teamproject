@@ -16,7 +16,8 @@
 .review-title p {
   text-align: center;
   display: block;
-  posi/* review */
+  posi
+  /* review */
   .review {
     padding-bottom: 250px;
     /* background-color: cornflowerblue; */
@@ -131,7 +132,7 @@
       margin-bottom: 2.5%;
     }
   }
-  tion: relative;
+  position: relative;
   font-size: 20px;
   color: #333;
   /* 이거 뭐임? */
