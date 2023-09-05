@@ -143,4 +143,36 @@ window.addEventListener("load", function () {
       driveRadioButton.checked = false; // 시승 신청 라디오 버튼 체크 해제
     }
   });
+  // 개인정보 제공 동의
+  const argeeAll = $("#agree-all");
+  const argeeA = $("#check_1");
+  const argeeB = $("#check_2");
+
+  argeeAll.click(function () {
+    const flag = argeeAll.prop("checked");
+    if (flag) {
+      argeeA.prop("checked", true);
+      argeeB.prop("checked", true);
+    } else {
+      argeeA.prop("checked", false);
+      argeeB.prop("checked", false);
+    }
+  });
+
+  argeeA.click(function () {
+    checkAgreeAll();
+  });
+
+  argeeB.click(function () {
+    checkAgreeAll();
+  });
+
+  // "argeeA"와 "argeeB" 모두 체크되었는지 확인하고 "agree-all" 체크박스 업데이트
+  function checkAgreeAll() {
+    if (argeeA.prop("checked") && argeeB.prop("checked")) {
+      argeeAll.prop("checked", true);
+    } else {
+      argeeAll.prop("checked", false);
+    }
+  }
 });
