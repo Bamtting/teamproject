@@ -5,13 +5,14 @@ padding-bottom: 100px;
 }
 .news-title {
   font-size: 48px;
+  font-weight: 700;
   /* text-transform: uppercase; */
   display: block;
   position: relative;
   text-align: center;
   padding-top: 160px;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .news_inner{
@@ -29,14 +30,13 @@ cursor: pointer;
 }
 
 .news-list{
-/* margin:20px; */
 color: #333;
-/* width: calc(100% / 3); */
 height: 100%;
-  /* overflow: hidden; */
+  /* margin-right: 10px; */
 }
+
 .news-list img{
-  width: 350px;
+  width: 100%;
   height: 300px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -44,12 +44,13 @@ height: 100%;
 
 .news-list li b{
 font-size: 20px;
+/* width: 90%; */
 /* text-align: center; */
 margin-bottom: 30px;
 font-weight: bold;
 line-height: 1.75em;
 display: -webkit-box;
--webkit-line-clamp: 1;
+-webkit-line-clamp: 2;
 -webkit-box-orient: vertical;
 white-space: normal; 
 text-overflow: ellipsis;
@@ -57,6 +58,7 @@ overflow: hidden;
 }
 .news-list li p {
 font-size: 14px;
+/* width: 90%; */
 margin-top: 20px;
 color: #333;  
 line-height: 1.75em;  
@@ -77,13 +79,11 @@ margin-bottom: 50px;
   flex-wrap: wrap;
   width: 100%;
 }
-.news-list {
-  width: 100%;
-  margin: 2.5%;
+
+.news-list img{
+  text-align: center;
 }
-.news-list li p {
-  width: 80%;
-}
+
 } 
 
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
@@ -97,7 +97,12 @@ margin-bottom: 50px;
   }
   .news-list{
     width: 100%;
-    flex-basis: calc(50% - 20px);
+    /* flex-basis: calc(50% - 20px); */
   }
+  .news-title{
+    text-align: center;
+    font-size: 40px;
+  }
+
 
 } 

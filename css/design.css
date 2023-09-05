@@ -23,14 +23,14 @@
   margin-top: 5%;
 }
 .title-txt {
-  font-size: 2.8em;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 10%;
   color: #000;
 }
 .title-subtxt {
-  font-size: 1.3em;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
   margin-bottom: 10%;
@@ -39,12 +39,14 @@
 .design-left > img {
   margin-top: 10%;
   width: 500px;
-  height: 400px;
+  height: 100%px;
 }
 .design-right {
   position: relative;
   display: block;
   padding-right: 5%;
+  width: 100%;
+  height: 100%;
 }
 .imgcloseup {
   width: 30px;
@@ -56,32 +58,38 @@
 .cl1-1 {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 12%;
+  cursor: pointer;
 }
 .cl1-2 {
   position: absolute;
   top: 52%;
   left: 60%;
+  cursor: pointer;
 }
 .cl1-3 {
   position: absolute;
   top: 31%;
-  left: 85%;
+  left: 88%;
+  cursor: pointer;
 }
 .cl2-1 {
   position: absolute;
   top: 14%;
   left: 73%;
+  cursor: pointer;
 }
 .cl2-2 {
   position: absolute;
   top: 40%;
-  left: 12%;
+  left: 14%;
+  cursor: pointer;
 }
 .cl3-1 {
   position: absolute;
   top: 45%;
   left: 25%;
+  cursor: pointer;
 }
 
 .imgcloseup:hover {
@@ -90,8 +98,8 @@
 /* desgin 슬라이드 */
 .design-slide {
   position: relative;
-  width: 600px;
-  height: 700px;
+  width: 450px;
+  height: 550px;
 }
 
 .design-slide .designswiper {
@@ -109,8 +117,9 @@
   color: #fff;
 }
 .design-slide .swiper-slide img {
-  width: 680px;
-  height: 700px;
+  width: 450px;
+  height: 550px;
+  object-fit: cover;
 }
 
 .design-slide .swiper-slide:nth-child(1n) {
@@ -123,4 +132,166 @@
 
 .design-slide .swiper-slide:nth-child(3n) {
   background-color: rgb(10, 184, 111);
+}
+/* ============================== */
+/* 1024px */
+@media screen and (max-width: 1024px) {
+  .inner {
+    width: 100%;
+  }
+  .design-wrap {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .title-txt {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .title-subtxt {
+    font-size: 1.7em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .design-left img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  .design-slide {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  .design-slide .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  /* ========================== */
+  .imgcloseup {
+    width: 20px;
+    height: 20px;
+  }
+  .cl1-1 {
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    cursor: pointer;
+  }
+  .cl1-2 {
+    position: absolute;
+    top: 52%;
+    left: 58%;
+    cursor: pointer;
+  }
+  .cl1-3 {
+    position: absolute;
+    top: 31%;
+    left: 76%;
+    cursor: pointer;
+  }
+  .cl2-1 {
+    position: absolute;
+    top: 14%;
+    left: 66%;
+    cursor: pointer;
+  }
+  .cl2-2 {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    cursor: pointer;
+  }
+  .cl3-1 {
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    cursor: pointer;
+  }
+}
+/* 768px */
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 100%;
+  }
+  .design-wrap {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .title-txt {
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin: 5% 0;
+  }
+  .title-subtxt {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    max-resolution: 5% 0;
+  }
+  .design-left img {
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+  }
+  .design-slide {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+  .design-slide .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  /* ============== */
+  .imgcloseup {
+    width: 15px;
+    height: 15px;
+  }
+  .cl1-1 {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    cursor: pointer;
+  }
+  .cl1-2 {
+    position: absolute;
+    top: 52%;
+    left: 61%;
+    cursor: pointer;
+  }
+  .cl1-3 {
+    position: absolute;
+    top: 23%;
+    left: 85%;
+    cursor: pointer;
+  }
+  .cl2-1 {
+    position: absolute;
+    top: 2%;
+    left: 70%;
+    cursor: pointer;
+  }
+  .cl2-2 {
+    position: absolute;
+    top: 38%;
+    left: 19%;
+    cursor: pointer;
+  }
+  .cl3-1 {
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    cursor: pointer;
+  }
 }

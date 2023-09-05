@@ -10,7 +10,9 @@
 /* 텍스트 애니메이션 활성 상태 */
 [data-aos="fade-up"].aos-animate {
   opacity: 1; /* 애니메이션 활성 상태에서 투명도를 1로 설정하여 나타냅니다. */
-  transform: translateY(0); /* 애니메이션 활성 상태에서 위치를 초기 상태로 되돌립니다. */
+  transform: translateY(
+    0
+  ); /* 애니메이션 활성 상태에서 위치를 초기 상태로 되돌립니다. */
 }
 /* ================================ */
 .flux {
@@ -20,91 +22,71 @@
   overflow: hidden;
   height: 1080px;
 }
-
+.flux-title h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 5%;
+}
+.flux {
+  /* background-color: aquamarine; */
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 1080px;
+}
 .flux-title {
   width: 100%;
   margin: 0 auto;
   height: 60px;
 }
 .flux-title h1 {
-  text-alig/* flux */
-  .flux {
-    background-color: aquamarine;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    height: 1080px;
-  }
-  .flux-title {
-    width: 100%;
-    margin: 0 auto;
-    height: 60px;
-  }
-  .flux-title h1 {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    padding-top: 5%;
-  }
-  .more {
-    color: #59c3ff;
-    float: right;
-    position: absolute;
-    left: 90%;
-    top: 30%;
-    cursor: pointer;
-  }
-  .flux .flux-imgbox-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: antiquewhite;
-    height: 620px;
-    padding: 200px 40px;
-    margin: 100px 10px;
-  }
-  .imgbox {
-    /* display: flex;
-      flex-direction: column;
-      align-items: center; */
-    width: 330px;
-    height: 300px;
-  }
-  .imgbox img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transform: scale(1);
-    transition: transform 0.3s;
-  }
-  .imgbox:hover img {
-    transform: scale(1.1);
-  }
-  
-  .flux-name {
-    display: block;
-    width: 165px;
-    height: 20px;
-    margin: 0 auto;
-    margin-top: 18px;
-    text-align: center;
-    font-size: 1em;
-    line-height: 1;
-    font-weight: 600;
-    color: #333;
-  }
-  .flux-advice {
-    font-size: 1.1em;
-    font-weight: bold;
-    line-height: 1.4;
-    letter-spacing: 0.44px;
-    color: #2c2c2c;
-  }
-  n: center;
+  text-align: center;
   font-size: 48px;
   font-weight: 700;
   padding-top: 5%;
+}
+.more {
+  color: #59c3ff;
+  float: right;
+  position: absolute;
+  left: 90%;
+  top: 30%;
+  cursor: pointer;
+}
+.imgbox {
+  width: 150px;
+  height: 130px;
+}
+.imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.imgbox:hover img {
+  transform: scale(1.1);
+}
+
+.flux-name {
+  display: block;
+  width: 165px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 600;
+  color: #333;
+}
+.flux-advice {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 0.44px;
+  color: #2c2c2c;
 }
 .more {
   color: #59c3ff;
@@ -119,10 +101,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   height: 620px;
-  padding: 200px 40px;
-  margin: 100px 10px;
+  padding: 200px 25px;
+  margin: 100px 5px;
 }
 .imgbox {
   /* display: flex;
@@ -158,6 +140,80 @@
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.4;
-  letter-spacing: 0.44px;
+  /* letter-spacing: 0.44px; */
   color: #2c2c2c;
+}
+/* ============================== */
+@media screen and (max-width:1024px){
+  .flux-title{
+    width: 80%;
+  }
+  .flux-title h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+  .flux .flux-imgbox-container{
+    widows: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    gap: 3%;
+  }
+  .more{
+    position: absolute;
+    top: 83%;
+    left: 47%;
+  }
+  .flux-name{
+    display: none;
+  }
+  .flux .flux-advice{
+    margin-top: 15%;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media screen and (max-width:768px) {
+  .flux-title{
+    width: 70%;
+  }
+  .flux-title h1{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  .flux .flux-imgbox-container{
+    widows: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+    gap: 3%;
+  }
+  .more{
+    position: absolute;
+    top: 89%;
+    left: 47%;
+  }
+  .flux-name{
+    display: none;
+  }
+  .flux .flux-advice{
+    margin-top: 15%;
+    font-size: 0.8em;
+    text-align: center;
+  }
 }

@@ -1,20 +1,25 @@
 window.addEventListener("load", function () {
   var swiper = new Swiper(".news-slide", {
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-        },
+      480: {
+        slidesPerView: 1, // 화면 크기가 480 이상일 때 1개의 슬라이드로 변경
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+       
       },
   });
   var swiper = new Swiper(".review-slide", {
@@ -25,14 +30,18 @@ window.addEventListener("load", function () {
       clickable: true,
     },
     breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
+      480: {
+        slidesPerView: 1, // 화면 크기가 480 이상일 때 1개의 슬라이드로 변경
+        spaceBetween: 0,
       },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      }
+    }
   });
 });
