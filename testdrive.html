@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PBGCP3DX");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="현대VENUE 웹사이트입니다." />
+    <meta name="keywords" content="현대VENUE, VENUE, 베뉴" />
+    <meta name="author" content="현대VENUE" />
+    <meta property="og:title" content="현대VENUE" />
+    <meta property="og:site_name" content="현대VENUE 웹사이트" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://https://www.hyundai.com/kr/ko/e/vehicles/venue/intro/"
+    />
+    <meta property="og:description" content="현대VENUE 웹사이트입니다." />
+    <!-- AOS 라이브러리를 CDN을 통해 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- 스와이퍼 js -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- 파비콘 적용 -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <title>세상 즐거움 속에 혼라이프 VENUE</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/s_testcar.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PBGCP3DX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="apply-form">
+      <div class="wrap">
+        <div class="td-inner">
+          <header class="td-header">
+            <div class="td-header-left">
+              <h1>시승 및 상담신청</h1>
+            </div>
+            <div class="td-header-right">
+              <img src="images/베뉴 로고.png" alt="logo" />
+            </div>
+          </header>
+          <div class="select-area">
+            <h2>신청 유형</h2>
+          </div>
+          <div class="input-box">
+            <input type="radio" class="testType1" value="drive" checked />
+            시승 신청
+            <input type="radio" class="testType2" value="consulting" />
+            차량 상담
+          </div>
+          <div class="select-area">
+            <h2>모델 선택</h2>
+          </div>
+          <select id="carValue" name="carValue">
+            <option value="default">차량을 선택해주세요.</option>
+            <option class="Venue" value="Venue">Venue</option>
+          </select>
+
+          <div id="carImage">
+            <!-- 이미지가 나타날 곳 -->
+          </div>
+          <div class="select-area">
+            <h2>지역 선택</h2>
+          </div>
+          <div class="testdrive-area">
+            <div class="select-box">
+              <select id="selcity" name="selcity">
+                <!-- JavaScript로 옵션 추가될 자리 -->
+              </select>
+            </div>
+            <div class="select-box">
+              <select id="dealer" name="dealer">
+                <!-- JavaScript로 옵션 추가될 자리 -->
+              </select>
+            </div>
+          </div>
+
+          <div class="select-area">
+            <h2>개인정보 입력</h2>
+          </div>
+          <div class="information-area">
+            <p class="text-area">
+              *실제 상담 받으실 고객님의 정보를 입력해주세요. 자세한 상담을 위해
+              담당 딜러가 입력한 휴대전화번호로 연락 드립니다.
+            </p>
+          </div>
+          <div class="info-form">
+            <label for="name" class="name">이름*</label>
+            <input
+              type="text"
+              class="info-name"
+              placeholder="이름을 입력해주세요"
+            />
+            <div class="info-row">
+              <div class="col">
+                <div class="input-wrap">
+                  <label for="phone" class="phone">휴대전화번호*</label>
+                  <input
+                    type="text"
+                    class="info-phone"
+                    placeholder="'-'를 제외하고 입력해주세요"
+                  />
+                </div>
+                <button class="info-btn" type="button">인증번호 받기</button>
+              </div>
+              <div class="col">
+                <div class="input-wrap">
+                  <label for="code" class="code">인증번호*</label>
+                  <input
+                    type="text"
+                    class="info-code"
+                    placeholder="인증번호를 입력해주세요."
+                  />
+                </div>
+                <button class="info-code-btn">확인</button>
+              </div>
+            </div>
+          </div>
+          <div class="select-area">
+            <h2>개인정보 제공 동의</h2>
+          </div>
+          <div class="Consent-area">
+            <p class="text-area">
+              현대 자동차는 VENUE 차량 예약 서비스 제공을 위해 <개인정보 보호법>
+              등 관련 법률에 따라 아래와 같이 개인정보를 수집, 이용, 제공하고자
+              합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기
+              바랍니다.
+            </p>
+            <div class="agree-top">
+              * 귀하는 아래 동의 내용을 확인한 후 개별 동의를 하실 수도
+              있습니다. 아래의 동의 항목 중에는 선택 동의 사항이 포함되어
+              있습니다
+              <div class="form-box">
+                <input type="checkbox" class="agree-all" name="agree-all" />
+                <label for="agree-all">전체동의</label>
+              </div>
+            </div>
+            <ul class="agree-list">
+              <li>
+                <dl>
+                  <dt>개인정보 수집 및 이용 동의 <strong>(필수) *</strong></dt>
+                  <dd>
+                    <div class="form-box">
+                      <input
+                        type="radio"
+                        class="agruseyny"
+                        name="agruseyny"
+                        value="Y"
+                      />
+                      <label for="agruseyny">동의함</label>
+                      <input
+                        type="radio"
+                        class="agruseynn"
+                        name="agruseynn"
+                        value="N"
+                      />
+                      <label for="agruseynn">동의안함</label>
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

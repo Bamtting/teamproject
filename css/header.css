@@ -81,7 +81,7 @@
   text-align: center;
 }
 .header-menu-box li a {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #000;
 }
@@ -111,7 +111,7 @@
     margin: 0 20px;
   }
   .header-menu-box li a {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -144,6 +144,6 @@
   }
 
   .header-menu-box li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
