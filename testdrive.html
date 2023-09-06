@@ -154,11 +154,12 @@
             </p>
           </div>
           <div class="info-form">
-            <label for="name" class="name">이름*</label>
+            <label for="name" class="name" >이름*</label>
             <input
               type="text"
               class="info-name"
               placeholder="이름을 입력해주세요"
+              id="nameInput"
             />
             <div class="info-row">
               <div class="col">
@@ -168,9 +169,10 @@
                     type="text"
                     class="info-phone"
                     placeholder="'-'를 제외하고 입력해주세요"
+                    id="phoneInput"
                   />
                 </div>
-                <button class="info-btn" type="button">인증번호 받기</button>
+                <button class="info-btn" type="button" id="getAuthButton">인증번호 받기</button>
               </div>
               <div class="col">
                 <div class="input-wrap">
@@ -181,9 +183,11 @@
                     placeholder="인증번호를 입력해주세요."
                   />
                 </div>
-                <button class="info-code-btn">확인</button>
+                <button class="info-code-btn" id="confirmButton" disabled>확인</button>
               </div>
             </div>
+            <div id="message"></div> <!-- 메시지를 표시할 div 추가 -->
+            <div id="timer"></div> <!-- 타이머를 표시할 div 추가 -->
           </div>
           <div class="select-area">
             <h2>개인정보 제공 동의</h2>
