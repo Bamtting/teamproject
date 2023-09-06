@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  gap: 20%;
+  gap: 10%;
   margin-top: 10%;
 }
 .design-left {
@@ -189,11 +189,13 @@
 @media screen and (max-width: 768px) {
   .inner {
     width: 100%;
+    position: relative;
   }
   .design-wrap {
     flex-wrap: wrap;
-    display: block;
+    margin: 0;
   }
+  
   .title-txt {
     font-size: 1.8em;
     font-weight: 700;
@@ -217,7 +219,7 @@
     width: 80%;
     height: 300px;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 5%;
   }
   .design-slide .swiper-slide {
     height: 300px;
@@ -225,7 +227,7 @@
   .design-slide .swiper-slide img {
     width: 100%;
     height: 300px;
-    object-fi3t: cover;
+    object-fit: cover;
   }
   /* ============== */
   .imgcloseup {

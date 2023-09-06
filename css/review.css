@@ -38,13 +38,13 @@
 }
 .review-box img {
   width: 377px;
-  height: 223px;
+    height: 223px;
   position: relative;
   object-fit: cover;
 }
 .review-box span::after {
   content: "";
-  border: 1px solid #000;
+  border: 1px solid #b9b8b8;
   width: 377px;
   /* height: 1px; */
   display: flex;
@@ -63,6 +63,7 @@ text-overflow: ellipsis;
 overflow: hidden;
 }
 .review-box li {
+  margin-top: 30px;
   margin-bottom: 10px;
   color: #000;
   font-weight: bold;
@@ -82,7 +83,7 @@ overflow: hidden;
   width: calc(100% - 10%);
   /* text-overflow: ellipsis; */
   line-height: 1.75em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .review-box p:last-child{
   margin-top: 10px;
@@ -110,13 +111,23 @@ overflow: hidden;
   }
   .review-box p {
     margin-left: 4.5%;
+   
   }
 }
 
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (max-width: 768px) {
+  .review{
+    padding: 0;
+  }
   .review-inner {
     flex-wrap: wrap;
+  }
+  .review h1{
+    padding:20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
   }
   .review-inner img {
     width: 90%;
@@ -129,10 +140,13 @@ overflow: hidden;
     margin-bottom: 10px;
   }
   .review-box p:last-child{
-    margin-top: -20px;
+    margin-top: 0px;
   }
   .review-box{
     width: 100%;
-    flex-basis: calc(50% - 20px);
+    /* flex-basis: calc(50% - 20px); */
+  }
+  .review-box img{
+    object-fit: none;
   }
 }

@@ -182,28 +182,39 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 1110px) {
+.imgbox:nth-child(2){
+margin: 0 2%;
+}
+
+}
 @media screen and (max-width: 768px) {
+  .flux .inner{
+    margin-top: 10% ;
+  }
   .flux-title {
     width: 70%;
+    margin: 50px auto;
   }
   .flux-title h1 {
     text-align: center;
-    margin: 0 auto;
-    width: 70%;
-    padding: 0;
+    width: 90%;
     font-size: 1.8em;
     font-weight: 700;
   }
   .flux .flux-imgbox-container {
-    widows: 80%;
+  
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     justify-content: center;
     align-items: center;
-    margin: 10% 0;
+    margin: 15% 0;
     gap: 3%;
+  }
+  .imgbox{
+    width: 400px;
   }
   .more {
     position: absolute;
@@ -214,8 +225,11 @@
     display: none;
   }
   .flux .flux-advice {
-    margin-top: 15%;
+    width: 70%;
+    display: block;
     font-size: 0.8em;
-    text-align: center;
+    text-align: left;
+  margin: -50px 0 -50px 120px;
+    
   }
 }

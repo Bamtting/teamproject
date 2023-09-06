@@ -157,10 +157,10 @@
     font-size: 1.3em;
     font-weight: 400;
   }
-  .highlight-tab-memu a h4{
+  .highlight-tab-memu a h4 {
     font-size: 0.8em;
   }
-  .highlight-tab-content p{
+  .highlight-tab-content p {
     font-size: 0.6em;
   }
   .safety-bt {
@@ -169,30 +169,39 @@
   }
   .swiper-button-next,
   .swiper-button-prev {
-display: none;
+    display: none;
   }
 }
 /* 768px */
 @media screen and (max-width: 768px) {
   .highlight-title {
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: 700;
   }
   .highlight-item h3 {
     font-size: 1.3em;
     font-weight: 400;
   }
-    .highlight-tab-memu a h4{
+  .highlight-tab-memu a h4 {
     font-size: 0.6em;
+    line-height: 1.5;
   }
-    .highlight-tab-content p{
+  .highlight-content {
+    padding: 0;
+  }
+  .highlight-tab-content p {
     font-size: 0.4em;
+    line-height: 1.5;
+  }
+ 
+  .highlight-txt{
+    padding: 0;
   }
   .safety-bt {
     display: none;
   }
   .swiper-button-next,
   .swiper-button-prev {
-display: none;
+    display: none;
   }
 }

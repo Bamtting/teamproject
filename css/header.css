@@ -9,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 9999;
   box-shadow: 1px 1px 10px 0 #4e4e4e10;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .modal li {
@@ -38,7 +38,7 @@
   border-radius: 50%;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 1px 1px 10px 0 #4e4e4e10;
+  box-shadow: 2px 2px 10px 0 #4e4e4e00;
   cursor: pointer;
 }
 .modal-top img {
@@ -90,11 +90,11 @@
   .modal {
     width: 50px;
   }
-  .modal img {
+  .modal li a img {
     width: 25px;
   }
   .modal li a {
-    font-size: 13px;
+    font-size: 11px;
   }
   .modal-top {
     width: 40px;
@@ -117,7 +117,10 @@
 
 @media all and (max-width: 768px) {
   .modal li a {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .modal li a img {
+    width: 20px;
   }
   .modal-top {
     width: 30px;
