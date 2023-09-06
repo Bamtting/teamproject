@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  var swiper = new Swiper(".news-slide", {
+  var swiperNews = new Swiper(".news-slide", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -19,10 +19,9 @@ window.addEventListener("load", function () {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-       
-      },
+    },
   });
-  var swiper = new Swiper(".review-slide", {
+  var swiperReview = new Swiper(".review-slide", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -41,7 +40,7 @@ window.addEventListener("load", function () {
       1024: {
         slidesPerView: 3,
         spaceBetween: 0,
-      }
-    }
+      },
+    },
   });
 });

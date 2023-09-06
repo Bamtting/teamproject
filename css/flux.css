@@ -82,11 +82,13 @@
   color: #333;
 }
 .flux-advice {
+  position: absolute;
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.4;
   letter-spacing: 0.44px;
   color: #2c2c2c;
+  bottom: -10%;
 }
 .more {
   color: #59c3ff;
@@ -144,18 +146,18 @@
   color: #2c2c2c;
 }
 /* ============================== */
-@media screen and (max-width:1024px){
-  .flux-title{
+@media screen and (max-width: 1024px) {
+  .flux-title {
     width: 80%;
   }
-  .flux-title h1{
+  .flux-title h1 {
     text-align: center;
     margin: 0 auto;
     padding: 0;
     font-size: 2.2em;
     font-weight: 700;
   }
-  .flux .flux-imgbox-container{
+  .flux .flux-imgbox-container {
     widows: 90%;
     display: flex;
     flex-direction: column;
@@ -166,25 +168,25 @@
     margin: 10% 0;
     gap: 3%;
   }
-  .more{
+  .more {
     position: absolute;
     top: 83%;
     left: 47%;
   }
-  .flux-name{
+  .flux-name {
     display: none;
   }
-  .flux .flux-advice{
+  .flux .flux-advice {
     margin-top: 15%;
     font-size: 1em;
     text-align: center;
   }
 }
-@media screen and (max-width:768px) {
-  .flux-title{
+@media screen and (max-width: 768px) {
+  .flux-title {
     width: 70%;
   }
-  .flux-title h1{
+  .flux-title h1 {
     text-align: center;
     margin: 0 auto;
     width: 70%;
@@ -192,7 +194,7 @@
     font-size: 1.8em;
     font-weight: 700;
   }
-  .flux .flux-imgbox-container{
+  .flux .flux-imgbox-container {
     widows: 80%;
     display: flex;
     flex-direction: column;
@@ -203,15 +205,15 @@
     margin: 10% 0;
     gap: 3%;
   }
-  .more{
+  .more {
     position: absolute;
     top: 89%;
     left: 47%;
   }
-  .flux-name{
+  .flux-name {
     display: none;
   }
-  .flux .flux-advice{
+  .flux .flux-advice {
     margin-top: 15%;
     font-size: 0.8em;
     text-align: center;
