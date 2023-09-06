@@ -156,6 +156,7 @@
   color: #fff;
   background-color: #000;
   margin-right: 0;
+  cursor: pointer;
 }
 .input-wrap {
   width: calc(100% - 180px);
@@ -181,6 +182,7 @@
   background-color: #949494;
   border: none;
   margin-right: 0;
+  cursor: pointer;
 }
 .Consent-area {
   margin-top: 20px;
@@ -201,7 +203,7 @@
   height: 30px;
   margin-right: 10px;
 }
-.form-box {
+.agree-form-box {
   position: absolute;
   top: 27px;
   right: 20px;
@@ -217,8 +219,14 @@
   margin-top: 30px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+.agree-list li {
+  width: 100%;
+  text-align: center;
 }
 .agree-list li dt {
+  display: inline-block;
   font-size: 16px;
   color: #000;
   font-weight: 600;
@@ -227,6 +235,67 @@
   color: #f50537;
   font-size: 16px;
 }
-.agree-list .form-box {
+.agree-list dl {
+  border: 1px solid #999;
+  padding: 10px;
+  margin-left: 40px;
+  float: left;
+}
+.agree-list dl input {
+  width: 24px;
+  height: 24px;
+  margin: 10px 0;
+}
+.agree-list dl a {
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.form-a-box {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.area-font {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.2;
+}
+.area-font a {
+  color: #f50537;
+  border-bottom: 1px solid #f50537;
+}
+.agree-info-box {
+  margin-top: 20px;
+}
+.text-info-st::after {
+  content: "|";
+  margin-left: 5px;
+}
+.agree-info-box p {
+  margin-top: 10px;
+}
+.footer-btn2 {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #ccc;
+}
+.footer-box2 {
   width: 100%;
+  text-align: center;
+}
+.footer-a {
+  display: inline-block;
+  width: 100%;
+  max-width: 635px;
+  height: 50px;
+  background-color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
 }

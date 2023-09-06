@@ -2,7 +2,7 @@
 .design {
   position: relative;
   width: 100%;
-  height: 1080px;
+  height: 900px;
   /* background-color: #0a62d0; */
   margin: 0;
   overflow: hidden;
@@ -12,10 +12,9 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 100px;
+  justify-content: space-between;
   gap: 20%;
+  margin-top: 10%;
 }
 .design-left {
   display: flex;
@@ -28,6 +27,7 @@
   line-height: 1.3;
   margin-bottom: 10%;
   color: #000;
+  text-align: center;
 }
 .title-subtxt {
   font-size: 20px;
@@ -35,6 +35,7 @@
   line-height: 1.3;
   margin-bottom: 10%;
   color: #3f3f3f;
+  text-align: center;
 }
 .design-left > img {
   margin-top: 10%;
@@ -167,9 +168,12 @@
     margin: 0 auto;
     margin-top: 2%;
   }
+  .design-slide .swiper-slide {
+    height: 400px;
+  }
   .design-slide .swiper-slide img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
   }
   /* ========================== */
@@ -177,41 +181,8 @@
     width: 20px;
     height: 20px;
   }
-  .cl1-1 {
-    position: absolute;
-    top: 50%;
-    left: 24%;
-    cursor: pointer;
-  }
-  .cl1-2 {
-    position: absolute;
-    top: 52%;
-    left: 58%;
-    cursor: pointer;
-  }
-  .cl1-3 {
-    position: absolute;
-    top: 31%;
-    left: 76%;
-    cursor: pointer;
-  }
-  .cl2-1 {
-    position: absolute;
-    top: 14%;
-    left: 66%;
-    cursor: pointer;
-  }
-  .cl2-2 {
-    position: absolute;
-    top: 40%;
-    left: 23%;
-    cursor: pointer;
-  }
-  .cl3-1 {
-    position: absolute;
-    top: 43%;
-    left: 34%;
-    cursor: pointer;
+  .imgcloseup {
+    display: none;
   }
 }
 /* 768px */
@@ -248,50 +219,20 @@
     margin: 0 auto;
     margin-top: 20%;
   }
+  .design-slide .swiper-slide {
+    height: 300px;
+  }
   .design-slide .swiper-slide img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 300px;
+    object-fi3t: cover;
   }
   /* ============== */
   .imgcloseup {
     width: 15px;
     height: 15px;
   }
-  .cl1-1 {
-    position: absolute;
-    top: 50%;
-    left: 16%;
-    cursor: pointer;
-  }
-  .cl1-2 {
-    position: absolute;
-    top: 52%;
-    left: 61%;
-    cursor: pointer;
-  }
-  .cl1-3 {
-    position: absolute;
-    top: 23%;
-    left: 85%;
-    cursor: pointer;
-  }
-  .cl2-1 {
-    position: absolute;
-    top: 2%;
-    left: 70%;
-    cursor: pointer;
-  }
-  .cl2-2 {
-    position: absolute;
-    top: 38%;
-    left: 19%;
-    cursor: pointer;
-  }
-  .cl3-1 {
-    position: absolute;
-    top: 42%;
-    left: 30%;
-    cursor: pointer;
+  .imgcloseup {
+    display: none;
   }
 }
