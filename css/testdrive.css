@@ -182,7 +182,6 @@
   background-color: #949494;
   border: none;
   margin-right: 0;
-  cursor: pointer;
 }
 #confirmButton[disabled] {
   cursor: not-allowed; /* 버튼이 비활성화된 경우 커서를 not-allowed로 설정합니다. */
@@ -292,7 +291,6 @@
 .footer-box2 {
   width: 100%;
   text-align: center;
-}
 }
 .footer-a {
   display: inline-block;
