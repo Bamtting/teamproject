@@ -82,4 +82,100 @@ window.addEventListener("load", function () {
       familyBox.slideDown();
     }
   });
+
+  // 디자인 스크롤
+
+  // "디자인" 메뉴 항목과 대상 섹션을 선택합니다.
+  var designMenuItem = $("ul.header-menu-box li:contains('디자인') a");
+  var designSection = $("section.design.clearfix");
+
+  // 메뉴 항목을 클릭할 때 스크롤 애니메이션을 적용합니다.
+  designMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: designSection.offset().top,
+      },
+      1000
+    );
+  });
+
+  // 실내공간
+  var spaceMenuItem = $("ul.header-menu-box li:contains('실내공간') a");
+  var spaceSection = $("section.space.clearfix");
+
+  spaceMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: spaceSection.offset().top,
+      },
+      1000
+    );
+  });
+  // FLUX
+  var fluxMenuItem = $("ul.header-menu-box li:contains('FLUX') a");
+  var fluxSection = $("section.flux.clearfix");
+
+  fluxMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: fluxSection.offset().top,
+      },
+      1000
+    );
+  });
+  // 기능
+  var highlightMenuItem = $("ul.header-menu-box li:contains('기능') a");
+  var highlightSection = $("section.highlight.clearfix");
+
+  highlightMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: highlightSection.offset().top,
+      },
+      1000
+    );
+  });
+  // 갤러리
+  var galleryMenuItem = $("ul.header-menu-box li:contains('갤러리') a");
+  var gallerySection = $("section.gallery.clearfix");
+
+  galleryMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: gallerySection.offset().top,
+      },
+      1000
+    );
+  });
+  // 뉴스
+  var newsMenuItem = $("ul.header-menu-box li:contains('뉴스') a");
+  var newsSection = $("section.news.clearfix");
+
+  newsMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: newsSection.offset().top,
+      },
+      1000
+    );
+  });
+  // 리뷰
+  var reviewMenuItem = $("ul.header-menu-box li:contains('리뷰') a");
+  var reviewSection = $("section.review.clearfix");
+
+  reviewMenuItem.click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: reviewSection.offset().top,
+      },
+      1000
+    );
+  });
 });
