@@ -93,6 +93,10 @@
   width: 30px;
   height: 32px;
 }
+.footer-family{
+  position: relative;
+  display: block;
+}
 .footer-family-inner {
   width: 270px;
   height: 30px;
@@ -113,8 +117,8 @@
 }
 .footer-family-box {
   position: absolute;
-  right: 21px;
-  bottom: 249px;
+  right: 0px;
+  bottom: -50px;
   width: 270px;
   padding: 10px;
   background-color: #191718;
@@ -122,6 +126,7 @@
   text-align: left;
   display: none;
   border: 1px solid #999;
+
 }
 
 .footer-family-box > li {
@@ -192,8 +197,8 @@
     width: 270px;
   }
   .footer-family-box {
-    right: 328px;
-    bottom: 265px;
+    right: 0px;
+    bottom: -50px;
   }
 }
 
