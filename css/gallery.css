@@ -80,12 +80,14 @@
   }
   .gallery-box3 {
     width: 100%;
+    display: flex;
     justify-content: space-between;
     margin-top: 2.5%;
   }
   .gallery-box3 img {
     width: 49%;
     height: auto;
+    margin-bottom: 3%;
   }
 }
 
