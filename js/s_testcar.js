@@ -328,4 +328,10 @@ window.addEventListener("load", function () {
       }
     }, 1000); // 1초마다 업데이트
   }
+
+  const footerbtn = document.querySelector(".footer-a");
+
+  footerbtn.addEventListener("click", Function(){
+    alert("시승 신청이 완료되었습니다.")
+  })
 });
