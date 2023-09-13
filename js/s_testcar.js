@@ -331,7 +331,7 @@ window.addEventListener("load", function () {
 
   const footerbtn = document.querySelector(".footer-a");
 
-  footerbtn.addEventListener("click", Function(){
-    alert("시승 신청이 완료되었습니다.")
-  })
+  footerbtn.addEventListener("click", function () {
+    alert("시승 신청이 완료되었습니다.");
+  });
 });
